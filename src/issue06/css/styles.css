@@ -435,12 +435,45 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Utopia Std Bold';
+  src: url('../type/UtopiaStd-BoldCapt.eot');
+  src: url('../type/UtopiaStd-BoldCapt.eot?#iefix') format('embedded-opentype'),
+    url('../type/UtopiaStd-BoldCapt.woff') format('woff'),
+    url('../type/UtopiaStd-BoldCapt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Utopia Std Italic';
+  src: url('../type/UtopiaStd-CaptIt.eot');
+  src: url('../type/UtopiaStd-CaptIt.eot?#iefix') format('embedded-opentype'),
+    url('../type/UtopiaStd-CaptIt.woff') format('woff'),
+    url('../type/UtopiaStd-CaptIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+em {
+  font-style: normal;
+  font-family: 'Utopia Std Italic';
+}
+
+strong {
+  font-weight: normal;
+  font-family: 'Utopia Std Bold';
+}
+
+br {
+  line-height: 1.6em;
+}
 
 /* Layout
    ========================================================================== */
 html {
   font-family: 'Utopia Std';
-  font-size:  14px;
+  font-size:  18px;
   line-height: 1.45em;
   color:  white;
   background-color: black;
@@ -496,8 +529,8 @@ html {
 
 /* Indentation
    ========================================================================== */
-.margin-right-3 {
-  margin-right: 3.5px;
+.salvation {
+  margin-right: 6px;
 }
 .margin-25 {
   margin-left: 25px;
@@ -538,5 +571,5 @@ html {
 .barratt {
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  width: 560px;
 }
