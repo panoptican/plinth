@@ -455,25 +455,37 @@ html {
   padding:  80px;
 }
 
+.no-top {
+  margin-top: 2px;
+}
+
+.no-bottom {
+  margin-bottom: 2px;
+}
+
+/* Indentation
+   ========================================================================== */
+.padding-25 {
+  padding-left: 25px;
+}
+.padding-40 {
+  padding-left: 40px;
+}
+.padding-90 {
+  padding-left: 90px;
+}
+.padding-140 {
+  padding-left: 140px;
+}
+.padding-190 {
+  padding-left: 190px;
+}
+
 /* Barratt
    ========================================================================== */
 .barratt {
   width: 400px;
 }
-
-.barratt p.col1 {
-  padding-left: 40px;
-}
-.barratt p.col2 {
-  padding-left: 90px;
-}
-.barratt p.col3 {
-  padding-left: 140px;
-}
-.barratt p.col4 {
-  padding-left: 190px;
-}
-
 .barratt div.page-break {
   height: 300px;
 }
