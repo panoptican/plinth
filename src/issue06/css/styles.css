@@ -423,124 +423,30 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/* Type */
+
+/* Type
+   ========================================================================== */
 @font-face {
-    font-family: 'linux_biolinum_oregular';
-    src: url('../type/linbiolinum_r-webfont.eot');
-    src: url('../type/linbiolinum_r-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
-         url('../type/linbiolinum_r-webfont.woff') format('woff'),
-         url('../type/linbiolinum_r-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_r-webfont.svg#linux_biolinum_oregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'linux_biolinum_obold';
-    src: url('../type/linbiolinum_rb-webfont.eot');
-    src: url('../type/linbiolinum_rb-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
-         url('../type/linbiolinum_rb-webfont.woff') format('woff'),
-         url('../type/linbiolinum_rb-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_rb-webfont.svg#linux_biolinum_obold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'linux_biolinum_oitalic';
-    src: url('../type/linbiolinum_ri-webfont.eot');
-    src: url('../type/linbiolinum_ri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
-         url('../type/linbiolinum_ri-webfont.woff') format('woff'),
-         url('../type/linbiolinum_ri-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_ri-webfont.svg#linux_biolinum_oitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'museo_slab500';
-    src: url('../type/Museo_Slab_500_2-webfont.eot');
-    src: url('../type/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
-         url('../type/Museo_Slab_500_2-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Utopia Std';
+  src: url('../type/UtopiaStd-Capt.eot');
+  src: url('../type/UtopiaStd-Capt.eot?#iefix') format('embedded-opentype'),
+    url('../type/UtopiaStd-Capt.woff') format('woff'),
+    url('../type/UtopiaStd-Capt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'museo_slab500_italic';
-    src: url('../type/Museo_Slab_500italic-webfont.eot');
-    src: url('../type/Museo_Slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
-         url('../type/Museo_Slab_500italic-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500italic-webfont.svg#museo_slab500_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html {
+  font-family: 'Utopia Std';
+  font-size:  14px;
+  line-height: 1.45em;
+  color:  white;
+  background-color: black;
 }
-/* Content */
-.content {
-  font-family: 'museo_slab500';
-  font-size: 16px;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 200px;
-  padding-bottom: 50px;
-}
-em {
-  font-family: 'museo_slab500_italic';
-}
-h1 {
-  font-family: 'linux_biolinum_obold';
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-h2 {
-  margin-top: 0;
-}
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.author-credit {
-  font-family: 'linux_biolinum_obold';
-  text-transform: uppercase;
-}
-.colons {
-  font-size: 22px;
-  margin-bottom: 100px;
-  font-family: 'linux_biolinum_obold';
-}
-.title {
-  font-family: 'linux_biolinum_oregular';
-  position: fixed;
-  background-color: white;
-  padding-top: 20px;
-  padding-left: 20%;
-  width: 100%;
-}
-.credit {
-  margin-top: 300px;
-  font-family: 'linux_biolinum_oregular';
-  font-size: 18px;
-  text-align: justify;
-}
-.credit em {
-  font-family: 'linux_biolinum_oitalic';
-}
-.title-piece {
-  font-family: 'linux_biolinum_obold';
-  text-transform: uppercase;
-  font-size: 28px;
-  margin-bottom: 60px;
-}
-.additional-pieces {
-  margin-top: 400px;
+
+.container {
+  margin:  auto;
+  width:  50vw;
+  background-color: black;
+  padding:  40px;
 }
