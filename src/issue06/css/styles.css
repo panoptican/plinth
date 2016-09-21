@@ -496,6 +496,9 @@ html {
 
 /* Indentation
    ========================================================================== */
+.margin-right-3 {
+  margin-right: 3.5px;
+}
 .margin-25 {
   margin-left: 25px;
 }
