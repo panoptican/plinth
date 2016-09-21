@@ -23,6 +23,6 @@
   },
   "homepage": "https://gitlab.com/udle/plinth#README",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.13.0"
   }
 }

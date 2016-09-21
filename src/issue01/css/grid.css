@@ -1,0 +1,174 @@
+/*	--------------------------------------------------
+Type
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'lacuna_regularregular';
+    src: url('/issue01/type/lacuna-webfont.eot');
+    src: url('/issue01/type/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/lacuna-webfont.woff') format('woff'),
+         url('/issue01/type/lacuna-webfont.ttf') format('truetype'),
+         url('/issue01/type/lacuna-webfont.svg#lacuna_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lacuna_italicregular';
+    src: url('/issue01/type/lacuna-italic-webfont.eot');
+    src: url('/issue01/type/lacuna-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
+         url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype'),
+         url('/issue01/type/lacuna-italic-webfont.svg#lacuna_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NoticiaTextRegular';
+    src: url('/issue01/type/NoticiaText-Regular-webfont.eot');
+    src: url('/issue01/type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype'),
+         url('/issue01/type/NoticiaText-Regular-webfont.svg#NoticiaTextRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextItalic';
+    src: url('/issue01/type/NoticiaText-Italic-webfont.eot');
+    src: url('/issue01/type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype'),
+         url('/issue01/type/NoticiaText-Italic-webfont.svg#NoticiaTextItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextBold';
+    src: url('/issue01/type/NoticiaText-Bold-webfont.eot');
+    src: url('/issue01/type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype'),
+         url('/issue01/type/NoticiaText-Bold-webfont.svg#NoticiaTextBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextBoldItalic';
+    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot');
+    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype'),
+         url('/issue01/type/NoticiaText-BoldItalic-webfont.svg#NoticiaTextBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*	--------------------------------------------------
+Base
+-------------------------------------------------- */
+
+html, body {
+  height: 100%; 
+  width: 1210px;
+  margin: 0 auto;
+  font:14px/1.6 'lacuna_regularregular', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.content {font:14px/1.6 'NoticiaTextRegular', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.content strong {font:14px/1.6 'NoticiaTextBold', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.content em {font:14px/1.6 'NoticiaTextItalic', serif;
+  -webkit-font-smoothing: antialiased;}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	
+h1 { font-size: 40px; line-height: 38px; margin-bottom: 8px; }
+h2 { font-size: 35px; line-height: 38px; margin-bottom: 8px; }
+h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+
+p { margin: 0 0 20px 0; }
+
+em { font-style: italic; }
+strong { font-weight: bold;}
+small { font-size: 80%; }
+
+a, a:visited { color: #000000; text-decoration: none; outline: 0; }
+a:visited { color: #656263 }
+a:hover, a:focus { color: #918987; }
+p a, p a:visited { line-height: inherit; color: #656263}
+
+/*	--------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container { position: relative; width: 1210px; margin: 0 auto; padding: 0; }
+
+/*	--------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 2px -20px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
+ 
+.zero { width: 15px;}
+.one { width: 70px; }
+.two { width: 146px; }
+.three { width: 222px; }
+.four { width: 298px; }
+.five { width: 374px; }
+.six { width: 450px; }
+.seven { width: 526px; }
+.eight { width: 602px; }
+.nine { width: 678px; }
+.ten { width: 754px; }
+.eleven { width: 830px; }
+.twelve { width: 906px; }
+.thirteen { width: 982px; }
+.fourteen { width: 1058px; }
+.fifteen { width: 1134px; }
+.sixteen { width: 1210px; }
+ 
+.offset-by-one-half { margin-left: 38px; }
+.offset-by-one { margin-left: 76px; }
+.offset-by-two { margin-left: 152px; }
+.offset-by-three { margin-left: 228px; }
+.offset-by-four { margin-left: 304px; }
+.offset-by-five { margin-left: 380px; }
+.offset-by-six { margin-left: 456px; }
+.offset-by-seven { margin-left: 532px; }
+.offset-by-eight { margin-left: 608px; }
+.offset-by-nine { margin-left: 684px; }
+.offset-by-ten { margin-left: 760px; }
+.offset-by-eleven { margin-left: 836px; }
+.offset-by-twelve { margin-left: 912px; }
+.offset-by-thirteen { margin-left: 988px; }
+.offset-by-fourteen { margin-left: 1064px; }
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+ 
+/*	IE6 Problems ---------- */
+body.ie .column-row { width: 1216px; }
+body.ie .eight .column-row	 { width: 608px; }
+body.ie .nine .column-row	 { width: 684px; }
+body.ie .ten .column-row	 { width: 760px; }
+body.ie .eleven .column-row { width: 836px; }
+body.ie .twelve .column-row	 { width: 912px; }
+body.ie .thirteen .column-row	{ width: 988px; }
+body.ie .fourteen .column-row	{ width: 1064px; }
+body.ie .fifteen .column-row	{ width: 1140px; }
+body.ie .two-thirds .column-row { width: 614px; }

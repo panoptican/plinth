@@ -1,0 +1,216 @@
+/*	--------------------------------------------------
+Type
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'NoticiaTextRegular';
+    src: url('../type/NoticiaText-Regular-webfont.eot');
+    src: url('../type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/NoticiaText-Regular-webfont.woff') format('woff'),
+         url('../type/NoticiaText-Regular-webfont.ttf') format('truetype'),
+         url('../type/NoticiaText-Regular-webfont.svg#NoticiaTextRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextItalic';
+    src: url('../type/NoticiaText-Italic-webfont.eot');
+    src: url('../type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/NoticiaText-Italic-webfont.woff') format('woff'),
+         url('../type/NoticiaText-Italic-webfont.ttf') format('truetype'),
+         url('../type/NoticiaText-Italic-webfont.svg#NoticiaTextItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextBold';
+    src: url('../type/NoticiaText-Bold-webfont.eot');
+    src: url('../type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/NoticiaText-Bold-webfont.woff') format('woff'),
+         url('../type/NoticiaText-Bold-webfont.ttf') format('truetype'),
+         url('../type/NoticiaText-Bold-webfont.svg#NoticiaTextBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NoticiaTextBoldItalic';
+    src: url('../type/NoticiaText-BoldItalic-webfont.eot');
+    src: url('../type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
+         url('../type/NoticiaText-BoldItalic-webfont.ttf') format('truetype'),
+         url('../type/NoticiaText-BoldItalic-webfont.svg#NoticiaTextBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'verbcondregular';
+    src: url('../type/VerbCondRegular-webfont.eot');
+    src: url('../type/VerbCondRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/VerbCondRegular-webfont.woff2') format('woff2'),
+         url('../type/VerbCondRegular-webfont.woff') format('woff'),
+         url('../type/VerbCondRegular-webfont.ttf') format('truetype'),
+         url('../type/VerbCondRegular-webfont.svg#verbcondregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verbcondregular_italic';
+    src: url('../type/VerbCondRegular-Italic-webfont.eot');
+    src: url('../type/VerbCondRegular-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/VerbCondRegular-Italic-webfont.woff2') format('woff2'),
+         url('../type/VerbCondRegular-Italic-webfont.woff') format('woff'),
+         url('../type/VerbCondRegular-Italic-webfont.ttf') format('truetype'),
+         url('../type/VerbCondRegular-Italic-webfont.svg#verbcondregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*	--------------------------------------------------
+Base
+-------------------------------------------------- */
+
+html, body {
+  height: 100%; 
+  width: 1210px;
+  margin: 0 auto;
+  font:14px/1.6 'NoticiaTextRegular', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.sidebar {text-align: center;}
+
+.sidebar p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em; 
+  margin-top: 1em}
+
+a, a:visited { color: #000000; text-decoration: none; outline: 0; }
+a:visited { color: #000000 }
+
+.sidebar a::before,
+.sidebar a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.sidebar a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.sidebar a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.sidebar a:hover::before,
+.sidebar a:hover::after,
+.sidebar a:focus::before,
+.sidebar a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.content {font:14px/1.6 'verbcondregular', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.content em {font:14px/1.6 'verbcondregular_italic', serif;
+  -webkit-font-smoothing: antialiased;}
+
+.standard {text-align:justify;text-justify:inter-word;margin-right: 2em;}
+
+.dagger {font-size:36px;margin-bottom:2em;margin-top:2em;}
+
+.bio {text-align:justify;text-justify:inter-word;margin-right: 1em;margin-top: 10em; margin-bottom: 0; vertical-align: bottom;}
+
+.attribution {
+   height: 694px;
+   display: table-cell;
+   vertical-align: bottom;}
+
+.attrTITLE {
+   font-size: 20px; 
+   font-weight: bold; 
+   line-height: 20px; 
+   margin-bottom: 1px;}
+
+.attrAUTHOR {
+   font-size: 16px; 
+   line-height: 14px;}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	
+h1 { font-size: 40px; line-height: 38px; margin-bottom: 8px; }
+h2 { font-size: 35px; line-height: 38px; margin-bottom: 8px; }
+h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+
+p { margin: 0 0 20px 0;}
+
+em { font-style: italic; }
+strong { font-weight: bold;}
+small { font-size: 80%; }
+
+.content a { color: #444444; text-decoration: none; outline: 0; }
+
+
+
+
+/* --------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container { position: relative; width: 1580px; margin: 0 auto; padding: 0; }
+ 
+ 
+/* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 18px -20px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 20px; }
+ 
+.one { width: 180px; }
+.two { width: 380px; }
+.three { width: 580px; }
+.four { width: 780px; }
+.five { width: 980px; }
+.six { width: 1180px; }
+.seven { width: 1380px; }
+.eight { width: 1580px; }
+ 
+.offset-by-one-half { margin-left: 100px; }
+.offset-by-one { margin-left: 200px; }
+.offset-by-two { margin-left: 400px; }
+.offset-by-three { margin-left: 600px; }
+.offset-by-four { margin-left: 800px; }
+.offset-by-five { margin-left: 1000px; }
+.offset-by-six { margin-left: 1200px; }
+ 
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+ 
+/* IE6 Problems ---------- */
+body.ie .column-row { width: 1600px; }
+body.ie .two-thirds .column-row { width: 1620px; }
