@@ -452,7 +452,7 @@ html {
   /* margin-top:  100vh; */
   width:  720px;
   background-color: black;
-  padding:  40px;
+  padding:  80px;
 }
 
 /* Barratt
@@ -468,4 +468,8 @@ html {
 }
 .barratt p.col4 {
   padding-left: 190px;
+}
+
+.barratt div.page-break {
+  height: 300px;
 }
