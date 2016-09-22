@@ -466,7 +466,18 @@ strong {
 }
 
 br {
-  /* line-height: 1.6em; */
+  line-height: 1.6em;
+}
+
+/* Header
+   ========================================================================== */
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  left: 50%;
+  margin-left: -400px;
 }
 
 /* Layout
@@ -481,7 +492,7 @@ html {
 .container {
   margin-left:  auto;
   margin-right: auto;
-  /* margin-top:  100vh; */
+  margin-top:  40vh;
   width:  720px;
   background-color: black;
   padding:  80px;
@@ -495,12 +506,40 @@ html {
 .text-center {
   text-align: center;
 }
+.portion-title {
+  font-size: 1.5em;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.piece {
+  margin-top: 60vh;
+}
+.title {
+  font-size: 3em;
+  text-align: right;
+  line-height: 1.3em;
+}
+.subtitle {
+  font-size: .9em;
+  text-align: right;
+  line-height: 1.3em;
+  margin-bottom: 15px;
+}
+.author {
+  font-size: 1.5em;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
 
 /* Negative Spacing
    ========================================================================== */
 
 .top-40 {
   margin-top: 40px;
+}
+.top-70 {
+  margin-top: 70px;
 }
 .top-100 {
   margin-top: 100px;
@@ -517,14 +556,23 @@ html {
 .top-5 {
   margin-top: 5px;
 }
+.top-10 {
+  margin-top: 10px;
+}
+.top-40 {
+  margin-top: 40px;
+}
 .bottom-5 {
   margin-bottom: 5px;
+}
+.bottom-40 {
+  margin-bottom: 40px;
 }
 
 /* Indentation
    ========================================================================== */
-.salvation {
-  margin-right: 6px;
+.indented {
+  text-indent: 50px;
 }
 .margin-25 {
   margin-left: 25px;
@@ -538,7 +586,6 @@ html {
 .margin-60 {
   margin-left: 60px;
 }
-
 .margin-90 {
   margin-left: 90px;
 }
@@ -554,6 +601,9 @@ html {
 .margin-150 {
   margin-left: 150px;
 }
+.margin-160 {
+  margin-left: 160px;
+}
 .margin-180 {
   margin-left: 180px;
 }
@@ -561,10 +611,27 @@ html {
   margin-left: 190px;
 }
 
-/* Barratt
+/* Div Width
    ========================================================================== */
-.barratt {
+.narrow-560 {
   margin-left: auto;
   margin-right: auto;
   width: 560px;
+}
+
+/* Customizations
+   ========================================================================== */
+.salvation {
+  margin-right: 6px;
+}
+.schwob p {
+  line-height: 2em;
+  text-align: justify;
+}
+.butler p,
+.tedesco p,
+.chapman p,
+.navaratnam p {
+  line-height: 1.75em;
+  text-align: justify;
 }
