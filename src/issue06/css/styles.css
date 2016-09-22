@@ -466,15 +466,15 @@ strong {
 }
 
 br {
-  line-height: 1.6em;
+  /* line-height: 1.6em; */
 }
 
 /* Layout
    ========================================================================== */
 html {
   font-family: 'Utopia Std';
-  font-size:  18px;
-  line-height: 1.45em;
+  font-size:  16px;
+  line-height: 1.5em;
   color:  white;
   background-color: black;
 }
@@ -496,15 +496,9 @@ html {
   text-align: center;
 }
 
-/* Line Spacing
+/* Negative Spacing
    ========================================================================== */
 
-.no-top {
-  margin-top: 2px;
-}
-.no-bottom {
-  margin-bottom: 2px;
-}
 .top-40 {
   margin-top: 40px;
 }
@@ -544,6 +538,7 @@ html {
 .margin-60 {
   margin-left: 60px;
 }
+
 .margin-90 {
   margin-left: 90px;
 }
