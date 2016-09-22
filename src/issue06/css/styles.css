@@ -550,36 +550,71 @@ a, a:visited, a:active, a:hover {
   height: 42vh;
 }
 
-/* Header
+/* TOC
    ========================================================================== */
 .toc-left {
   position: fixed;
   top: 0;
   left: 0;
   margin: 20px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 70px);
   width: 20vw;
+  padding-right: 1px;
+  padding-bottom: 30px;
   border-top: 2px solid white;
   border-left: 2px solid white;
   border-bottom: 2px solid white;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column;
+  text-align: right;
 }
-
 .toc-right {
   position: fixed;
   top: 0;
   right: 0;
   margin: 20px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 70px);
   width: 20vw;
+  padding-left: 1px;
+  padding-bottom: 30px;
   border-top: 2px solid white;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
+  justify-content: flex-end;
+  display: flex;
+  flex-flow: column;
+}
+.toc-left p,
+.toc-right p {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.toc-right img,
+.toc-left img {
+  margin-top: 10px;
+  width: 35%;
+}
+.toc-right img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 @media (max-width: 800px) {
   .toc-left,
   .toc-right {
     visibility: hidden;
   }
+}
+.toc-rule {
+  width: 10px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Layout
