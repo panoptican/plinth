@@ -475,9 +475,31 @@ br {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 200px;
+  top: 160px;
   left: 50%;
   margin-left: -400px;
+}
+.broken-node-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -140px;
+  right: 490px;
+}
+.broken-node-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -140px;
+  left: 717px;
+}
+.broken-node-right img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 /* Layout
