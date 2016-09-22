@@ -481,10 +481,8 @@ a, a:visited, a:active, a:hover {
    ========================================================================== */
 .wordmark {
   position: fixed;
-  width: 728px;
   top: 130px;
   left: 50%;
-  margin-left: -364px;
   background-color: black;
 }
 .wordmark img {
@@ -494,18 +492,11 @@ a, a:visited, a:active, a:hover {
   margin-right: auto;
   z-index: 100;
 }
-@media (max-width: 900px) {
-  .wordmark img {
-    width: 70vw;
-  }
-}
 .top-toc {
   position: fixed;
-  width: 728px;
   height: 200px;
   top: 0;
   left: 50%;
-  margin-left: -364px;
   background-color: black;
   text-align: center;
 }
@@ -604,12 +595,6 @@ a, a:visited, a:active, a:hover {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-@media (max-width: 800px) {
-  .toc-left,
-  .toc-right {
-    visibility: hidden;
-  }
-}
 .toc-rule {
   width: 10px;
   color: white;
@@ -622,28 +607,17 @@ a, a:visited, a:active, a:hover {
 html {
   font-family: 'Utopia Std';
   font-size:  16px;
-  line-height: 1.5em;
+  line-height: 2em;
   color:  white;
   background-color: black;
   overflow-x: hidden; 
-}
-@media (max-width: 800px) {
-  html {
-    font-size: 20px;
-  }
 }
 .container {
   margin-left:  auto;
   margin-right: auto;
   margin-top:  40vh;
-  width:  720px;
   background-color: black;
   padding:  80px;
-}
-@media (max-width: 800px) {
-  .container {
-    width:  65vw;
-  }
 }
 .push-right {
   float: right;
@@ -691,6 +665,7 @@ html {
 
 .bio {
   margin-top: 400px;
+  line-height: 2em;
   background-color: rgba(255, 255, 255, 0.075);
   padding: 40px;
 }
@@ -715,6 +690,9 @@ html {
 }
 .top-400 {
   margin-top: 400px;
+}
+.top-800 {
+  margin-top: 800px;
 }
 .top-5 {
   margin-top: 5px;
@@ -797,6 +775,154 @@ html {
 .navaratnam p,
 .trefry p, 
 .bios p {
-  line-height: 1.75em;
+  line-height: 2em;
   text-align: justify;
+}
+
+/* Responsiveness
+   ========================================================================== */
+/* Extra Small Devices, Phones */ 
+@media (min-width: 320px) {
+  .wordmark img {
+    width: 80vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: hidden;
+  }
+  .container {
+    width:  80vw;
+    padding: 5px;
+  }
+  .wordmark,
+  .top-toc {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+}
+/* Smartphones */ 
+@media (min-width: 480px) {
+  .wordmark img {
+    width: 80vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: hidden;
+  }
+  .container {
+    width:  80vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .wordmark img {
+    width: 50vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: hidden;
+  }
+  .container {
+    width:  80vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+}
+/* Very Small Screens */
+@media (min-width: 992px) {
+  .wordmark img {
+    width: 40vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: visible;
+  }
+  .container {
+    width:  40vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 45vw;
+    margin-left: -22.5vw;
+  }
+}
+/* Small Screens */
+@media (min-width: 1200px) {
+  .wordmark img {
+    width: 20vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: visible;
+  }
+  .container {
+    width:  40vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 45vw;
+    margin-left: -22.5vw;
+  }
+}
+/* Average Screens */
+@media (min-width: 1440px) {
+  .wordmark img {
+    width: 20vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: visible;
+  }
+  .container {
+    width:  40vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 45vw;
+    margin-left: -22.5vw;
+  }
+}
+/* Large Screens */
+@media (min-width: 1920px) {
+  .wordmark img {
+    width: 20vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: visible;
+  }
+  .container {
+    width:  40vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 45vw;
+    margin-left: -22.5vw;
+  }
+}
+/* Very Large Screens */
+@media (min-width: 2560px) {
+  .wordmark img {
+    width: 20vw;
+  }
+  .toc-left,
+  .toc-right {
+    visibility: visible;
+  }
+  .container {
+    width:  40vw;
+  }
+  .wordmark,
+  .top-toc {
+    width: 45vw;
+    margin-left: -22.5vw;
+  }
 }
