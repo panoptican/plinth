@@ -489,6 +489,11 @@ br {
   margin-right: auto;
   z-index: 100;
 }
+@media (max-width: 900px) {
+  .wordmark img {
+    width: 70vw;
+  }
+}
 .top-toc {
   position: fixed;
   width: 728px;
@@ -565,6 +570,12 @@ br {
   border-right: 2px solid white;
   border-bottom: 2px solid white;
 }
+@media (max-width: 800px) {
+  .toc-left,
+  .toc-right {
+    visibility: hidden;
+  }
+}
 
 /* Layout
    ========================================================================== */
@@ -576,6 +587,11 @@ html {
   background-color: black;
   overflow-x: hidden; 
 }
+@media (max-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+}
 .container {
   margin-left:  auto;
   margin-right: auto;
@@ -583,6 +599,11 @@ html {
   width:  720px;
   background-color: black;
   padding:  80px;
+}
+@media (max-width: 800px) {
+  .container {
+    width:  65vw;
+  }
 }
 .push-right {
   float: right;
