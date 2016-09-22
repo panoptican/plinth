@@ -468,30 +468,34 @@ br {
 .smallcaps {
     font-variant: small-caps;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 
 /* Header
    ========================================================================== */
 .wordmark {
   position: fixed;
-  width: 724px;
+  width: 728px;
   top: 130px;
   left: 50%;
-  margin-left: -362px;
+  margin-left: -364px;
   background-color: black;
 }
 .wordmark img {
-  width: 60%;
+  width: 20vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  z-index: 100;
 }
 .top-toc {
   position: fixed;
-  width: 724px;
+  width: 728px;
   height: 200px;
   top: 0;
   left: 50%;
-  margin-left: -362px;
+  margin-left: -364px;
   background-color: black;
   text-align: center;
 }
