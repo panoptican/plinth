@@ -454,19 +454,19 @@ textarea {
   font-weight: normal;
   font-style: italic;
 }
-
 em {
   font-style: normal;
   font-family: 'Utopia Std Italic';
 }
-
 strong {
   font-weight: normal;
   font-family: 'Utopia Std Bold';
 }
-
 br {
   line-height: 1.6em;
+}
+.smallcaps {
+    font-variant: small-caps;
 }
 
 /* Header
@@ -631,7 +631,8 @@ html {
 .butler p,
 .tedesco p,
 .chapman p,
-.navaratnam p {
+.navaratnam p,
+.trefry p {
   line-height: 1.75em;
   text-align: justify;
 }
