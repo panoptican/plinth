@@ -472,6 +472,11 @@ br {
   text-transform: uppercase;
 }
 
+a, a:visited, a:active, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /* Header
    ========================================================================== */
 .wordmark {
@@ -641,12 +646,18 @@ html {
 }
 .sigil {
   width: 100%;
-  margin-top: 300px;
+  margin-top: 500px;
 }
 .sigil img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bio {
+  margin-top: 400px;
+  background-color: rgba(255, 255, 255, 0.075);
+  padding: 40px;
 }
 
 /* Negative Spacing
@@ -749,7 +760,8 @@ html {
 .tedesco p,
 .chapman p,
 .navaratnam p,
-.trefry p {
+.trefry p, 
+.bios p {
   line-height: 1.75em;
   text-align: justify;
 }
