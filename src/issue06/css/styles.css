@@ -630,7 +630,6 @@ html {
 }
 .portion-title {
   font-size: 1.5em;
-  margin-top: 120px;
   margin-bottom: 40px;
 }
 .piece {
@@ -640,18 +639,21 @@ html {
   font-size: 3em;
   text-align: right;
   line-height: 1.3em;
+  text-align: center;
 }
 .subtitle {
   font-size: .9em;
   text-align: right;
   line-height: 1.3em;
   margin-bottom: 15px;
+  text-align: center;
 }
 .author {
   font-size: 1.5em;
   text-align: right;
   margin-top: 5px;
   margin-bottom: 100px;
+  text-align: center;
 }
 .sigil {
   width: 100%;
@@ -682,6 +684,9 @@ html {
 .top-100 {
   margin-top: 100px;
 }
+.top-150 {
+  margin-top: 150px;
+}
 .top-160 {
   margin-top: 160px;
 }
@@ -708,6 +713,9 @@ html {
 }
 .bottom-40 {
   margin-bottom: 40px;
+}
+.bottom-150 {
+  margin-bottom: 150px;
 }
 
 /* Indentation
