@@ -502,6 +502,32 @@ br {
   -ms-filter: "FlipH";
 }
 
+/* Header
+   ========================================================================== */
+.toc-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  height: calc(100vh - 40px);
+  width: 20vw;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.toc-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  height: calc(100vh - 40px);
+  width: 20vw;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 /* Layout
    ========================================================================== */
 html {
