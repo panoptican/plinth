@@ -19,7 +19,39 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style type="text/css" media="screen">
-
+    .body {
+      background-color:#C3C3C3;
+    }
+    .logo {
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      margin-left: -400px;
+      filter: invert(100%);
+    }
+    .broken-node-left {
+      position: absolute;
+      top: 22px;
+      left: 2vw;
+    }
+    .broken-node-right {
+      position: absolute;
+      top: 22px;
+      right: 2vw;
+    }
+    .broken-node-right img {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    .broken-node-left img,
+    .broken-node-right img {
+      height: 42vh;
+      filter: invert(100%);
+    }
   </style>
 
   <!-- Favicon
@@ -28,8 +60,15 @@
 
 </head>
 <body>
-
-<a href="issue06"><img src="./issue05/img/v.png" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%); height: 80vh;"></a>
+<div class="broken-node-left">
+  <img src="./issue06/img/broken_node_invert.png">
+</div>
+<div class="logo">
+  <a href="./issue06"><img src="./issue06/img/logo_bg.png"></a>
+</div>
+<div class="broken-node-right">
+  <img src="./issue06/img/broken_node_invert.png">
+</div>
 
 </body>
 </html>
