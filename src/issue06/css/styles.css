@@ -582,6 +582,11 @@ a, a:visited, a:active, a:hover {
   font-size: 14px;
   line-height: 1.2em;
 }
+.toc-left a,
+.toc-right a,
+.top-toc a {
+  color: #7E7E7E;
+}
 .toc-right img,
 .toc-left img {
   margin-top: 10px;
@@ -597,7 +602,7 @@ a, a:visited, a:active, a:hover {
 }
 .toc-rule {
   width: 10px;
-  color: white;
+  color: #7E7E7E;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -648,7 +653,7 @@ input {
   text-align: right;
   line-height: 1.3em;
   text-align: center;
-  color: #C3C3C3;
+  color: #7E7E7E;
 }
 .subtitle {
   font-size: .9em;
@@ -656,7 +661,7 @@ input {
   line-height: 1.3em;
   margin-bottom: 15px;
   text-align: center;
-  color: #C3C3C3;
+  color: #7E7E7E;
 }
 .author {
   font-size: 1.5em;
@@ -664,7 +669,7 @@ input {
   margin-top: 5px;
   margin-bottom: 100px;
   text-align: center;
-  color: #C3C3C3;
+  color: #7E7E7E;
 }
 .sigil {
   width: 100%;
@@ -679,7 +684,7 @@ input {
 .bio {
   margin-top: 400px;
   line-height: 2em;
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: RGBA(126, 126, 126, 0.075);
   padding: 40px;
 }
 .submit {
