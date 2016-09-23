@@ -601,7 +601,11 @@ a, a:visited, a:active, a:hover {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
+.anchor {
+  position: relative;
+  top: -400px;
+  visibility: hidden;
+}
 /* Layout
    ========================================================================== */
 html {
@@ -611,6 +615,10 @@ html {
   color:  white;
   background-color: black;
   overflow-x: hidden; 
+}
+input {
+  width: 20vw;
+  text-align: center;
 }
 .container {
   margin-left:  auto;
@@ -640,6 +648,7 @@ html {
   text-align: right;
   line-height: 1.3em;
   text-align: center;
+  color: #C3C3C3;
 }
 .subtitle {
   font-size: .9em;
@@ -647,6 +656,7 @@ html {
   line-height: 1.3em;
   margin-bottom: 15px;
   text-align: center;
+  color: #C3C3C3;
 }
 .author {
   font-size: 1.5em;
@@ -654,6 +664,7 @@ html {
   margin-top: 5px;
   margin-bottom: 100px;
   text-align: center;
+  color: #C3C3C3;
 }
 .sigil {
   width: 100%;
@@ -671,7 +682,12 @@ html {
   background-color: rgba(255, 255, 255, 0.075);
   padding: 40px;
 }
-
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
 /* Negative Spacing
    ========================================================================== */
 
