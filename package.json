@@ -24,5 +24,8 @@
   "homepage": "https://gitlab.com/udle/plinth#README",
   "devDependencies": {
     "browser-sync": "^2.13.0"
+  },
+  "dependencies": {
+    "granim": "^1.0.5"
   }
 }

@@ -27,7 +27,7 @@
       top: 160px;
       left: 50%;
       margin-left: -400px;
-      filter: invert(100%);
+      filter: invert(100%) contrast(50px);
     }
     .broken-node-left {
       position: absolute;
@@ -52,6 +52,16 @@
       height: 42vh;
       filter: invert(100%);
     }
+    #canvas-basic {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
   </style>
 
   <!-- Favicon
@@ -60,15 +70,38 @@
 
 </head>
 <body>
-<div class="broken-node-left">
-  <img src="./issue06/img/broken_node_invert.png">
-</div>
-<div class="logo">
-  <a href="./issue06"><img src="./issue06/img/logo_bg.png"></a>
-</div>
-<div class="broken-node-right">
-  <img src="./issue06/img/broken_node_invert.png">
-</div>
+  <canvas id="canvas-basic"></canvas>
+  <div class="broken-node-left">
+    <a href="./issue06"><img src="./issue06/img/broken_node_invert.png"></a>
+  </div>
+  <div class="logo">
+    <a href="./issue06"><img src="./issue06/img/logo_bg.png"></a>
+  </div>
+  <div class="broken-node-right">
+    <a href="./issue06"><img src="./issue06/img/broken_node_invert.png"></a>
+  </div>
+
+  <!-- Javascript
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="./js/granim.js"></script>
+  <script>
+  var granimInstance = new Granim({
+     element: '#canvas-basic',
+     name: 'granim',
+     direction: 'radial',
+     opacity: [1, 1],
+     isPausedWhenNotInView: true,
+     states : {
+      "default-state": {
+        gradients: [
+        ['#303030', '#C8C8C8'],
+        ['#161616', '#B5B5B7'],
+        ['#423B45', '#EAE9EC']
+        ]
+      }
+    }
+  });
+  </script>
 
 </body>
 </html>
