@@ -27,7 +27,7 @@
       top: 160px;
       left: 50%;
       margin-left: -400px;
-      filter: invert(100%) contrast(50px);
+      filter: invert(100%) grayscale(50%);
     }
     .broken-node-left {
       position: absolute;
@@ -50,7 +50,7 @@
     .broken-node-left img,
     .broken-node-right img {
       height: 42vh;
-      filter: invert(100%);
+      filter: invert(100%) opacity(50%);
     }
     #canvas-basic {
         position: absolute;
@@ -94,7 +94,7 @@
      states : {
       "default-state": {
         gradients: [
-        ['#303030', '#C8C8C8'],
+        ['#E3E3E3', '#C8C8C8'],
         ['#161616', '#B5B5B7'],
         ['#423B45', '#EAE9EC']
         ]
