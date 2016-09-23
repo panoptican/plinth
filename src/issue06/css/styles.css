@@ -608,7 +608,7 @@ a, a:visited, a:active, a:hover {
 }
 .anchor {
   position: relative;
-  top: -400px;
+  top: -280px;
   visibility: hidden;
 }
 /* Layout
