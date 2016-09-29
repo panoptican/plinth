@@ -85,6 +85,12 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="./js/granim.js"></script>
   <script>
+  var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+  if (mobile) {
+    alert('PLINTH is for computers. Proceed at your own risk.')
+  }
+
   var granimInstance = new Granim({
      element: '#canvas-basic',
      name: 'granim',
@@ -101,12 +107,6 @@
       }
     }
   });
-
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-
-    if (mobile) {
-      alert('PLINTH is for computers. Proceed at your own risk.')
-    }
   </script>
 
 </body>
