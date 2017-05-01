@@ -1,125 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title> . PLINTH . [issue 06]</title>
-  <meta name="description" content="PLINTH is more than a journal. PLINTH collects & manifests an alternate canon.">
-  <meta name="author" content="Unwin-Dunraven Literary Ecclesia">
-  
-  <!-- Facebook
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <title>. PLINTH . [issue 07]</title>
+  <meta name="description" content=" PLINTH is more than a journal. PLINTH collects manifests an alternate canon.">
+  <meta name="author" content="PLINTH">
+  <meta name="og:site_name" content="PLINTH">
+  <meta property="og:title" content=". PLINTH . [issue 07]" />
+  <meta property="og:type" content="website" />
+  <meta name="og:locale" content="en_US">
+  <meta name="fb:admins" content="369973279756708">
   <meta property="fb:app_id" content="896526060445261" />
-  <meta property="og:title" content="PLINTH" />
-  <meta property="og:type" content="book" />
-  <meta property="book:author" content="https://www.facebook.com/unwindunraven" />
-  <meta property="book:publisher" content="https://www.facebook.com/unwindunraven" />
-  <meta property="og:url" content="http://www.plinth.us/" />
-  <meta property="og:image" content="http://www.plinth.us/issue06/img/logo_bg.png" />
-
-  <!-- Twitter
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta property="og:url" content="http://www.plinth.us/issue07/" />
+  <meta property="og:image" content="http://www.plinth.us/issue07/img/social.png" />
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@unwin_dunraven">
-  <meta name="twitter:url" content="https://plinth.us/">
-  <meta name="twitter:title" content=". PLINTH . [issue 06]">
+  <meta name="twitter:url" content="https://plinth.us/issue07/">
+  <meta name="twitter:title" content=". PLINTH . [issue 07]">
   <meta name="twitter:description" content="PLINTH is more than a journal. PLINTH collects & manifests an alternate canon.">
-  <meta name="twitter:image" content="http://www.plinth.us/issue06/img/logo_bg.png">
+  <meta name="twitter:image" content="http://www.plinth.us/issue07/img/twitter.png">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style type="text/css" media="screen">
-    .body {
-      background-color:#C3C3C3;
-    }
-    .logo {
-      position: absolute;
-      top: 160px;
-      left: 50%;
-      margin-left: -400px;
-      filter: invert(100%) grayscale(50%);
-    }
-    .broken-node-left {
-      position: absolute;
-      top: 22px;
-      left: 2vw;
-    }
-    .broken-node-right {
-      position: absolute;
-      top: 22px;
-      right: 2vw;
-    }
-    .broken-node-right img {
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
-    }
-    .broken-node-left img,
-    .broken-node-right img {
-      height: 42vh;
-      filter: invert(100%) opacity(50%);
-    }
-    #canvas-basic {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./issue07/css/styles.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../favicon.ico">
-
+  <link rel="icon" type="image/png" href="./favicon.ico">
 </head>
+
 <body>
-  <canvas id="canvas-basic"></canvas>
-  <div class="broken-node-left">
-    <a href="./issue06"><img src="./issue06/img/broken_node_invert.png"></a>
-  </div>
-  <div class="logo">
-    <a href="./issue06"><img src="./issue06/img/logo_bg.png"></a>
-  </div>
-  <div class="broken-node-right">
-    <a href="./issue06"><img src="./issue06/img/broken_node_invert.png"></a>
+  <div class="numeral-container">
+    <div class="numeral">
+      <a href="./issue07">VII</a>
+    </div>
   </div>
 
-  <!-- Javascript
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="./js/granim.js"></script>
   <script>
-  var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 
-  if (mobile) {
-    alert('PLINTH is for computers. Proceed at your own risk.')
-  }
-
-  var granimInstance = new Granim({
-     element: '#canvas-basic',
-     name: 'granim',
-     direction: 'radial',
-     opacity: [1, 1],
-     isPausedWhenNotInView: true,
-     states : {
-      "default-state": {
-        gradients: [
-        ['#E3E3E3', '#C8C8C8'],
-        ['#161616', '#B5B5B7'],
-        ['#423B45', '#EAE9EC']
-        ]
-      }
+    if (mobile) {
+      alert('PLINTH is for computers. Proceed at your own risk.')
     }
-  });
   </script>
 
 </body>
+
 </html>
