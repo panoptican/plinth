@@ -842,8 +842,81 @@ body.ie .two-thirds .column-row { width: 614px; }
 }
 
 .numeral a, .numeral a:visited, .numeral a:hover, .numeral a:focus {
-  font-size: 280px; 
+  font-size: 280px;
   font-family: 'Averia Bold', serif;
   color: #a91e22;
   text-decoration: none;
+}
+
+/* Layout Utilities
+   ========================================================================== */
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* Container variants */
+.container-padded {
+  padding-top: 20px;
+}
+
+.container-index {
+  padding-top: 20px;
+  margin-bottom: 0;
+  height: 900px;
+}
+
+/* Logo container */
+.logo-container {
+  position: relative;
+  height: 180px;
+}
+
+/* Glyph image on index */
+.glyph-img {
+  height: 700px;
+}
+
+/* Spacer classes to replace invisible hr elements */
+.spacer-10 {
+  display: block;
+  height: 10pt;
+}
+
+.spacer-15 {
+  display: block;
+  height: 15pt;
+}
+
+.spacer-20 {
+  display: inline-block;
+  height: 20pt;
+}
+
+.spacer-100 {
+  display: block;
+  height: 100pt;
+}
+
+/* Empty cell placeholder */
+.empty-cell {
+  min-width: 1px;
+}
+
+/* Additional alignment classes */
+.align-bottom {
+  vertical-align: text-bottom;
+}
+
+.spacer-160 {
+  display: block;
+  height: 160pt;
 }

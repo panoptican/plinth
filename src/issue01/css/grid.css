@@ -172,3 +172,82 @@ body.ie .thirteen .column-row	{ width: 988px; }
 body.ie .fourteen .column-row	{ width: 1064px; }
 body.ie .fifteen .column-row	{ width: 1140px; }
 body.ie .two-thirds .column-row { width: 614px; }
+/* Layout Utilities
+   ========================================================================== */
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* Container variants */
+.container-padded {
+  padding-top: 20px;
+}
+
+.container-index {
+  padding-top: 20px;
+  margin-bottom: 0;
+  height: 900px;
+}
+
+/* Logo container */
+.logo-container {
+  position: relative;
+  height: 180px;
+}
+
+/* Spacer classes to replace invisible hr elements */
+.spacer-10 {
+  display: block;
+  height: 10pt;
+}
+
+.spacer-15 {
+  display: block;
+  height: 15pt;
+}
+
+.spacer-20 {
+  display: inline-block;
+  height: 20pt;
+}
+
+.spacer-100 {
+  display: block;
+  height: 100pt;
+}
+
+/* Margin utilities */
+.top-10 {
+  margin-top: 10px;
+}
+
+.top-25 {
+  margin-top: 25px;
+}
+
+/* Empty cell placeholder */
+.empty-cell {
+  min-width: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-bottom {
+  vertical-align: text-bottom;
+}
+
+.spacer-160 {
+  display: block;
+  height: 160pt;
+}

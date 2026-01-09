@@ -1256,3 +1256,79 @@ ul {
 {
     margin: 0 -3px 0 0;
 }
+
+/* Layout Utilities (added during cleanup)
+   ========================================================================== */
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* Container variants */
+.container-padded {
+  padding-top: 20px;
+}
+
+.container-index {
+  padding-top: 20px;
+  margin-bottom: 0;
+  height: 900px;
+}
+
+/* Logo container */
+.logo-container {
+  position: relative;
+  height: 180px;
+}
+
+/* Glyph image on index */
+.glyph-img {
+  height: 700px;
+}
+
+/* Spacer classes to replace invisible hr elements */
+.spacer-10 {
+  display: block;
+  height: 10pt;
+}
+
+.spacer-15 {
+  display: block;
+  height: 15pt;
+}
+
+.spacer-20 {
+  display: inline-block;
+  height: 20pt;
+}
+
+.spacer-100 {
+  display: block;
+  height: 100pt;
+}
+
+/* Empty cell placeholder */
+.empty-cell {
+  min-width: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-bottom {
+  vertical-align: text-bottom;
+}
+
+.spacer-160 {
+  display: block;
+  height: 160pt;
+}
