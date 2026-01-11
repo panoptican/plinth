@@ -181,6 +181,11 @@ a:hover {
   outline: 0;
 }
 
+a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
@@ -1335,4 +1340,21 @@ ul {
     min-width: 320px;
     overflow-x: auto;
   }
+}
+
+/* Accessibility - Skip Link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }

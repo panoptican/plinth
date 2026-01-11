@@ -91,7 +91,8 @@ html, body {
   margin-bottom: 1em; 
   margin-top: 1em}
 
-a, a:visited { color: #000000; text-decoration: none; outline: 0; }
+a, a:visited { color: #000000; text-decoration: none; }
+a:focus { outline: 2px solid currentColor; outline-offset: 2px; }
 a:visited { color: #000000 }
 
 .sidebar a::before,
@@ -171,7 +172,7 @@ em { font-style: italic; }
 strong { font-weight: bold;}
 small { font-size: 80%; }
 
-.content a { color: #444444; text-decoration: none; outline: 0; }
+.content a { color: #444444; text-decoration: none; }
 
 
 
@@ -297,4 +298,21 @@ Grid
     min-width: 320px;
     overflow-x: auto;
   }
+}
+
+/* Accessibility - Skip Link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }
