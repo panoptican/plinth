@@ -529,12 +529,7 @@ a, a:visited, a:active, a:hover {
   right: 2vw;
 }
 .broken-node-right img {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
 .broken-node-left img,
 .broken-node-right img {
@@ -593,12 +588,7 @@ a, a:visited, a:active, a:hover {
   width: 35%;
 }
 .toc-right img {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
 .toc-rule {
   width: 10px;

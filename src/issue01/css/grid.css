@@ -157,21 +157,8 @@ Grid
  
 /* Clear the columns automagically, thanks @kneath */
 .column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-* html .column-row, * html .row, * html .clearfix { height: 1%; }
 .column-row, .row, .clearfix { display: inline-block; }
 .column-row, .row, .clearfix { display: block; }
- 
-/*	IE6 Problems ---------- */
-body.ie .column-row { width: 1216px; }
-body.ie .eight .column-row	 { width: 608px; }
-body.ie .nine .column-row	 { width: 684px; }
-body.ie .ten .column-row	 { width: 760px; }
-body.ie .eleven .column-row { width: 836px; }
-body.ie .twelve .column-row	 { width: 912px; }
-body.ie .thirteen .column-row	{ width: 988px; }
-body.ie .fourteen .column-row	{ width: 1064px; }
-body.ie .fifteen .column-row	{ width: 1140px; }
-body.ie .two-thirds .column-row { width: 614px; }
 /* Layout Utilities
    ========================================================================== */
 
@@ -250,4 +237,14 @@ body.ie .two-thirds .column-row { width: 614px; }
 .spacer-160 {
   display: block;
   height: 160pt;
+}
+
+/* Responsive - allow horizontal scroll on mobile
+   ========================================================================== */
+@media (max-width: 1250px) {
+  html, body, .container, div#container, div.container {
+    width: auto;
+    min-width: 320px;
+    overflow-x: auto;
+  }
 }
