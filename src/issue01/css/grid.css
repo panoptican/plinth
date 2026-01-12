@@ -252,6 +252,33 @@ Grid
   height: 80px;
 }
 
+/* Prose and verse typography classes - replaces common inline styles */
+.prose {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 1em;
+}
+
+.verse {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+
+.verse-indent {
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.prose-indent {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Responsive - allow horizontal scroll on mobile
    ========================================================================== */
 @media (max-width: 1250px) {
