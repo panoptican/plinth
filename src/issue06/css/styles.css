@@ -433,9 +433,7 @@ textarea {
    ========================================================================== */
 @font-face {
   font-family: 'Utopia Std';
-  src: url('../type/UtopiaStd-Capt.eot');
-  src: url('../type/UtopiaStd-Capt.eot?#iefix') format('embedded-opentype'),
-    url('../type/UtopiaStd-Capt.woff') format('woff'),
+  src: url('../type/UtopiaStd-Capt.woff') format('woff'),
     url('../type/UtopiaStd-Capt.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -443,9 +441,7 @@ textarea {
 }
 @font-face {
   font-family: 'Utopia Std Bold';
-  src: url('../type/UtopiaStd-BoldCapt.eot');
-  src: url('../type/UtopiaStd-BoldCapt.eot?#iefix') format('embedded-opentype'),
-    url('../type/UtopiaStd-BoldCapt.woff') format('woff'),
+  src: url('../type/UtopiaStd-BoldCapt.woff') format('woff'),
     url('../type/UtopiaStd-BoldCapt.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -454,9 +450,7 @@ textarea {
 
 @font-face {
   font-family: 'Utopia Std Italic';
-  src: url('../type/UtopiaStd-CaptIt.eot');
-  src: url('../type/UtopiaStd-CaptIt.eot?#iefix') format('embedded-opentype'),
-    url('../type/UtopiaStd-CaptIt.woff') format('woff'),
+  src: url('../type/UtopiaStd-CaptIt.woff') format('woff'),
     url('../type/UtopiaStd-CaptIt.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;

@@ -434,9 +434,7 @@ Type
 
 @font-face {
 	font-family: 'Dosis SemiBold';
-	src: url('../type/Dosis-SemiBold.eot');
-	src: url('../type/Dosis-SemiBold.eot?#iefix') format('embedded-opentype'),
-		url('../type/Dosis-SemiBold.woff') format('woff'),
+	src: url('../type/Dosis-SemiBold.woff') format('woff'),
 		url('../type/Dosis-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
@@ -445,9 +443,7 @@ Type
 
 @font-face {
 	font-family: 'Averia Bold';
-	src: url('../type/AveriaSerifLibre-Bold.eot');
-	src: url('../type/AveriaSerifLibre-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../type/AveriaSerifLibre-Bold.woff') format('woff'),
+	src: url('../type/AveriaSerifLibre-Bold.woff') format('woff'),
 		url('../type/AveriaSerifLibre-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
@@ -456,9 +452,7 @@ Type
 
 @font-face {
 	font-family: 'Dosis Medium';
-	src: url('../type/Dosis-Medium.eot');
-	src: url('../type/Dosis-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../type/Dosis-Medium.woff') format('woff'),
+	src: url('../type/Dosis-Medium.woff') format('woff'),
 		url('../type/Dosis-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -467,9 +461,7 @@ Type
 
 @font-face {
 	font-family: 'Averia Italic';
-	src: url('../type/AveriaSerifLibre-Italic.eot');
-	src: url('../type/AveriaSerifLibre-Italic.eot?#iefix') format('embedded-opentype'),
-		url('../type/AveriaSerifLibre-Italic.woff') format('woff'),
+	src: url('../type/AveriaSerifLibre-Italic.woff') format('woff'),
 		url('../type/AveriaSerifLibre-Italic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
@@ -478,9 +470,7 @@ Type
 
 @font-face {
 	font-family: 'Averia Regular';
-	src: url('../type/AveriaSerifLibre-Regular.eot');
-	src: url('../type/AveriaSerifLibre-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../type/AveriaSerifLibre-Regular.woff') format('woff'),
+	src: url('../type/AveriaSerifLibre-Regular.woff') format('woff'),
 		url('../type/AveriaSerifLibre-Regular.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -489,9 +479,7 @@ Type
 
 @font-face {
 	font-family: 'Catamaran Bold';
-	src: url('../type/Catamaran-Bold.eot');
-	src: url('../type/Catamaran-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../type/Catamaran-Bold.woff') format('woff'),
+	src: url('../type/Catamaran-Bold.woff') format('woff'),
 		url('../type/Catamaran-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
@@ -500,9 +488,7 @@ Type
 
 @font-face {
 	font-family: 'Catamaran';
-	src: url('../type/Catamaran-Regular.eot');
-	src: url('../type/Catamaran-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../type/Catamaran-Regular.woff') format('woff'),
+	src: url('../type/Catamaran-Regular.woff') format('woff'),
 		url('../type/Catamaran-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;

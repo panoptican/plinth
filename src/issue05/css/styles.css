@@ -431,9 +431,7 @@ textarea {
 /* Type */
 @font-face {
     font-family: 'linux_biolinum_oregular';
-    src: url('../type/linbiolinum_r-webfont.eot');
-    src: url('../type/linbiolinum_r-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_r-webfont.woff') format('woff'),
          url('../type/linbiolinum_r-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -442,9 +440,7 @@ textarea {
 }
 @font-face {
     font-family: 'linux_biolinum_obold';
-    src: url('../type/linbiolinum_rb-webfont.eot');
-    src: url('../type/linbiolinum_rb-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_rb-webfont.woff') format('woff'),
          url('../type/linbiolinum_rb-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -453,9 +449,7 @@ textarea {
 }
 @font-face {
     font-family: 'linux_biolinum_oitalic';
-    src: url('../type/linbiolinum_ri-webfont.eot');
-    src: url('../type/linbiolinum_ri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_ri-webfont.woff') format('woff'),
          url('../type/linbiolinum_ri-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -464,9 +458,7 @@ textarea {
 }
 @font-face {
     font-family: 'museo_slab500';
-    src: url('../type/Museo_Slab_500_2-webfont.eot');
-    src: url('../type/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+    src: url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500_2-webfont.woff') format('woff'),
          url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -476,9 +468,7 @@ textarea {
 
 @font-face {
     font-family: 'museo_slab500_italic';
-    src: url('../type/Museo_Slab_500italic-webfont.eot');
-    src: url('../type/Museo_Slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
+    src: url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500italic-webfont.woff') format('woff'),
          url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;

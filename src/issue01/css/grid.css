@@ -4,9 +4,7 @@ Type
 
 @font-face {
     font-family: 'lacuna_regularregular';
-    src: url('/issue01/type/lacuna-webfont.eot');
-    src: url('/issue01/type/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/lacuna-webfont.woff') format('woff'),
+    src: url('/issue01/type/lacuna-webfont.woff') format('woff'),
          url('/issue01/type/lacuna-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -16,9 +14,7 @@ Type
 
 @font-face {
     font-family: 'lacuna_italicregular';
-    src: url('/issue01/type/lacuna-italic-webfont.eot');
-    src: url('/issue01/type/lacuna-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
+    src: url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
          url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -28,9 +24,7 @@ Type
 
 @font-face {
     font-family: 'NoticiaTextRegular';
-    src: url('/issue01/type/NoticiaText-Regular-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
+    src: url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
          url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -39,9 +33,7 @@ Type
 
 @font-face {
     font-family: 'NoticiaTextItalic';
-    src: url('/issue01/type/NoticiaText-Italic-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
+    src: url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
          url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -50,9 +42,7 @@ Type
 
 @font-face {
     font-family: 'NoticiaTextBold';
-    src: url('/issue01/type/NoticiaText-Bold-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
+    src: url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
          url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -61,9 +51,7 @@ Type
 
 @font-face {
     font-family: 'NoticiaTextBoldItalic';
-    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot');
-    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
+    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
          url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
