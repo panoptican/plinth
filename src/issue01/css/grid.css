@@ -7,8 +7,7 @@ Type
     src: url('/issue01/type/lacuna-webfont.eot');
     src: url('/issue01/type/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/lacuna-webfont.woff') format('woff'),
-         url('/issue01/type/lacuna-webfont.ttf') format('truetype'),
-         url('/issue01/type/lacuna-webfont.svg#lacuna_regularregular') format('svg');
+         url('/issue01/type/lacuna-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -19,8 +18,7 @@ Type
     src: url('/issue01/type/lacuna-italic-webfont.eot');
     src: url('/issue01/type/lacuna-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
-         url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype'),
-         url('/issue01/type/lacuna-italic-webfont.svg#lacuna_italicregular') format('svg');
+         url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -31,8 +29,7 @@ Type
     src: url('/issue01/type/NoticiaText-Regular-webfont.eot');
     src: url('/issue01/type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Regular-webfont.svg#NoticiaTextRegular') format('svg');
+         url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,8 +39,7 @@ Type
     src: url('/issue01/type/NoticiaText-Italic-webfont.eot');
     src: url('/issue01/type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Italic-webfont.svg#NoticiaTextItalic') format('svg');
+         url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,8 +49,7 @@ Type
     src: url('/issue01/type/NoticiaText-Bold-webfont.eot');
     src: url('/issue01/type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Bold-webfont.svg#NoticiaTextBold') format('svg');
+         url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -64,8 +59,7 @@ Type
     src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot');
     src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.svg#NoticiaTextBoldItalic') format('svg');
+         url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

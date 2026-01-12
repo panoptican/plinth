@@ -7,8 +7,7 @@ Type
     src: url('../type/NoticiaText-Regular-webfont.eot');
     src: url('../type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/NoticiaText-Regular-webfont.woff') format('woff'),
-         url('../type/NoticiaText-Regular-webfont.ttf') format('truetype'),
-         url('../type/NoticiaText-Regular-webfont.svg#NoticiaTextRegular') format('svg');
+         url('../type/NoticiaText-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,8 +17,7 @@ Type
     src: url('../type/NoticiaText-Italic-webfont.eot');
     src: url('../type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/NoticiaText-Italic-webfont.woff') format('woff'),
-         url('../type/NoticiaText-Italic-webfont.ttf') format('truetype'),
-         url('../type/NoticiaText-Italic-webfont.svg#NoticiaTextItalic') format('svg');
+         url('../type/NoticiaText-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,8 +27,7 @@ Type
     src: url('../type/NoticiaText-Bold-webfont.eot');
     src: url('../type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/NoticiaText-Bold-webfont.woff') format('woff'),
-         url('../type/NoticiaText-Bold-webfont.ttf') format('truetype'),
-         url('../type/NoticiaText-Bold-webfont.svg#NoticiaTextBold') format('svg');
+         url('../type/NoticiaText-Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,8 +37,7 @@ Type
     src: url('../type/NoticiaText-BoldItalic-webfont.eot');
     src: url('../type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
-         url('../type/NoticiaText-BoldItalic-webfont.ttf') format('truetype'),
-         url('../type/NoticiaText-BoldItalic-webfont.svg#NoticiaTextBoldItalic') format('svg');
+         url('../type/NoticiaText-BoldItalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -52,8 +48,7 @@ Type
     src: url('../type/VerbCondRegular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/VerbCondRegular-webfont.woff2') format('woff2'),
          url('../type/VerbCondRegular-webfont.woff') format('woff'),
-         url('../type/VerbCondRegular-webfont.ttf') format('truetype'),
-         url('../type/VerbCondRegular-webfont.svg#verbcondregular') format('svg');
+         url('../type/VerbCondRegular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -65,8 +60,7 @@ Type
     src: url('../type/VerbCondRegular-Italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/VerbCondRegular-Italic-webfont.woff2') format('woff2'),
          url('../type/VerbCondRegular-Italic-webfont.woff') format('woff'),
-         url('../type/VerbCondRegular-Italic-webfont.ttf') format('truetype'),
-         url('../type/VerbCondRegular-Italic-webfont.svg#verbcondregular_italic') format('svg');
+         url('../type/VerbCondRegular-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

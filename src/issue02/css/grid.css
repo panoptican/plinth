@@ -8,8 +8,7 @@ Type
     src: url('/issue02/type/lato-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue02/type/lato-italic-webfont.woff2') format('woff2'),
          url('/issue02/type/lato-italic-webfont.woff') format('woff'),
-         url('/issue02/type/lato-italic-webfont.ttf') format('truetype'),
-         url('/issue02/type/lato-italic-webfont.svg#latoitalic') format('svg');
+         url('/issue02/type/lato-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -21,8 +20,7 @@ Type
     src: url('/issue02/type/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue02/type/lato-bold-webfont.woff2') format('woff2'),
          url('/issue02/type/lato-bold-webfont.woff') format('woff'),
-         url('/issue02/type/lato-bold-webfont.ttf') format('truetype'),
-         url('/issue02/type/lato-bold-webfont.svg#latobold') format('svg');
+         url('/issue02/type/lato-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -34,8 +32,7 @@ Type
     src: url('/issue02/type/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue02/type/lato-regular-webfont.woff2') format('woff2'),
          url('/issue02/type/lato-regular-webfont.woff') format('woff'),
-         url('/issue02/type/lato-regular-webfont.ttf') format('truetype'),
-         url('/issue02/type/lato-regular-webfont.svg#latoregular') format('svg');
+         url('/issue02/type/lato-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -47,8 +44,7 @@ Type
     src: url('/issue02/type/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue02/type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
          url('/issue02/type/Museo_Slab_500_2-webfont.woff') format('woff'),
-         url('/issue02/type/Museo_Slab_500_2-webfont.ttf') format('truetype'),
-         url('/issue02/type/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+         url('/issue02/type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -60,8 +56,7 @@ Type
     src: url('/issue02/type/Museo_Slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('/issue02/type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
          url('/issue02/type/Museo_Slab_500italic-webfont.woff') format('woff'),
-         url('/issue02/type/Museo_Slab_500italic-webfont.ttf') format('truetype'),
-         url('/issue02/type/Museo_Slab_500italic-webfont.svg#museo_slab500_italic') format('svg');
+         url('/issue02/type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

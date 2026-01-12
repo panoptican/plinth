@@ -435,8 +435,7 @@ textarea {
     src: url('../type/linbiolinum_r-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_r-webfont.woff') format('woff'),
-         url('../type/linbiolinum_r-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_r-webfont.svg#linux_biolinum_oregular') format('svg');
+         url('../type/linbiolinum_r-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -446,8 +445,7 @@ textarea {
     src: url('../type/linbiolinum_rb-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_rb-webfont.woff') format('woff'),
-         url('../type/linbiolinum_rb-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_rb-webfont.svg#linux_biolinum_obold') format('svg');
+         url('../type/linbiolinum_rb-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -457,8 +455,7 @@ textarea {
     src: url('../type/linbiolinum_ri-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_ri-webfont.woff') format('woff'),
-         url('../type/linbiolinum_ri-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_ri-webfont.svg#linux_biolinum_oitalic') format('svg');
+         url('../type/linbiolinum_ri-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -468,8 +465,7 @@ textarea {
     src: url('../type/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500_2-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+         url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -480,8 +476,7 @@ textarea {
     src: url('../type/Museo_Slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500italic-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500italic-webfont.svg#museo_slab500_italic') format('svg');
+         url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
