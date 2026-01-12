@@ -440,6 +440,7 @@ Type
 		url('../type/Dosis-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -450,6 +451,7 @@ Type
 		url('../type/AveriaSerifLibre-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -460,6 +462,7 @@ Type
 		url('../type/Dosis-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -470,6 +473,7 @@ Type
 		url('../type/AveriaSerifLibre-Italic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -480,6 +484,7 @@ Type
 		url('../type/AveriaSerifLibre-Regular.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -490,6 +495,7 @@ Type
 		url('../type/Catamaran-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -500,6 +506,7 @@ Type
 		url('../type/Catamaran-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+    font-display: swap;
 }
 
 /*	--------------------------------------------------

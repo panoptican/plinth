@@ -439,6 +439,7 @@ textarea {
     url('../type/UtopiaStd-Capt.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+    font-display: swap;
 }
 @font-face {
   font-family: 'Utopia Std Bold';
@@ -448,6 +449,7 @@ textarea {
     url('../type/UtopiaStd-BoldCapt.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -458,6 +460,7 @@ textarea {
     url('../type/UtopiaStd-CaptIt.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 em {
   font-style: normal;

@@ -10,6 +10,7 @@ Type
          url('/issue01/type/lacuna-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -21,6 +22,7 @@ Type
          url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -32,6 +34,7 @@ Type
          url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -42,6 +45,7 @@ Type
          url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +56,7 @@ Type
          url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -62,6 +67,7 @@ Type
          url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /*	--------------------------------------------------

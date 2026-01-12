@@ -438,6 +438,7 @@ textarea {
          url('../type/linbiolinum_r-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'linux_biolinum_obold';
@@ -448,6 +449,7 @@ textarea {
          url('../type/linbiolinum_rb-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'linux_biolinum_oitalic';
@@ -458,6 +460,7 @@ textarea {
          url('../type/linbiolinum_ri-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'museo_slab500';
@@ -468,6 +471,7 @@ textarea {
          url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -479,6 +483,7 @@ textarea {
          url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 /* Content */
 .content {

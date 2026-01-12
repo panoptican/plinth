@@ -11,6 +11,7 @@ Type
          url('/issue02/type/lato-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -23,6 +24,7 @@ Type
          url('/issue02/type/lato-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -35,6 +37,7 @@ Type
          url('/issue02/type/lato-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -47,6 +50,7 @@ Type
          url('/issue02/type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -59,6 +63,7 @@ Type
          url('/issue02/type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
