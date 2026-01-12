@@ -122,8 +122,7 @@ Grid
 .column-row, .row { margin: 0 0 2px -20px; }
 .column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
  
-.zero { width: 15px;}
-.zero img { max-width: 100%; }
+.zero { width: 30px;}
 .one { width: 70px; }
 .two { width: 146px; }
 .three { width: 222px; }

@@ -653,8 +653,7 @@ Grid
 .column-row, .row { margin: 0 0 0 -20px; }
 .column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
  
-.zero { width: 15px;}
-.zero img { max-width: 100%; }
+.zero { width: 30px;}
 .one { width: 70px; }
 .two { width: 146px; }
 .three { width: 222px; }
@@ -858,7 +857,7 @@ Grid
 
 /* Container variants */
 .container-padded {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .container-index {
@@ -901,7 +900,7 @@ Grid
 
 /* Empty cell placeholder */
 .empty-cell {
-  min-width: 1px;
+  min-height: 1px;
 }
 
 /* Additional alignment classes */
