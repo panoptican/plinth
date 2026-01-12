@@ -123,6 +123,7 @@ Grid
 .column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
  
 .zero { width: 15px;}
+.zero img { max-width: 100%; }
 .one { width: 70px; }
 .two { width: 146px; }
 .three { width: 222px; }
