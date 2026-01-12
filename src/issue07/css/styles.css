@@ -18,6 +18,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 40px;
 }
 
 /* HTML5 display definitions
@@ -564,6 +565,7 @@ h2 {
 
 .toc-link {
   text-transform: uppercase;
+  display: inline-block;
 }
 
 em { font-style: italic; }
@@ -650,7 +652,7 @@ div#container, div.container { position: relative; width: 1210px; margin: 0 auto
 /*	--------------------------------------------------
 Grid
 -------------------------------------------------- */
-.column-row, .row { margin: 0 0 0 -20px; }
+.column-row, .row { margin: 0 0 2px -20px; }
 .column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
  
 .zero { width: 30px;}
