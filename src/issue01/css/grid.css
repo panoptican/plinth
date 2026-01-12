@@ -240,6 +240,18 @@ Grid
   height: 160pt;
 }
 
+/* Logo footer - replaces <br><br><br>&nbsp;&nbsp; before footer logos */
+.logo-footer {
+  margin-top: 60px;
+  margin-left: 24px;
+}
+
+/* Section divider spacer - replaces <br><br><br><br> before : : : : : dividers */
+.section-divider-spacer {
+  display: block;
+  height: 80px;
+}
+
 /* Responsive - allow horizontal scroll on mobile
    ========================================================================== */
 @media (max-width: 1250px) {
