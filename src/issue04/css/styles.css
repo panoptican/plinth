@@ -3,79 +3,67 @@
 
 @font-face {
     font-family: 'alte_haas_groteskbold';
-    src: url('../type/altehaasgroteskbold-webfont.eot');
-    src: url('../type/altehaasgroteskbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/altehaasgroteskbold-webfont.woff2') format('woff2'),
+    src: url('../type/altehaasgroteskbold-webfont.woff2') format('woff2'),
          url('../type/altehaasgroteskbold-webfont.woff') format('woff'),
-         url('../type/altehaasgroteskbold-webfont.ttf') format('truetype'),
-         url('../type/altehaasgroteskbold-webfont.svg#alte_haas_groteskbold') format('svg');
+         url('../type/altehaasgroteskbold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'alte_haas_groteskregular';
-    src: url('../type/altehaasgroteskregular-webfont.eot');
-    src: url('../type/altehaasgroteskregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/altehaasgroteskregular-webfont.woff2') format('woff2'),
+    src: url('../type/altehaasgroteskregular-webfont.woff2') format('woff2'),
          url('../type/altehaasgroteskregular-webfont.woff') format('woff'),
-         url('../type/altehaasgroteskregular-webfont.ttf') format('truetype'),
-         url('../type/altehaasgroteskregular-webfont.svg#alte_haas_groteskregular') format('svg');
+         url('../type/altehaasgroteskregular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'bebas_neuebold';
-    src: url('../type/bebasneue_bold-webfont.eot');
-    src: url('../type/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/bebasneue_bold-webfont.woff2') format('woff2'),
+    src: url('../type/bebasneue_bold-webfont.woff2') format('woff2'),
          url('../type/bebasneue_bold-webfont.woff') format('woff'),
-         url('../type/bebasneue_bold-webfont.ttf') format('truetype'),
-         url('../type/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+         url('../type/bebasneue_bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'bebas_neuebook';
-    src: url('../type/bebasneue_book-webfont.eot');
-    src: url('../type/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/bebasneue_book-webfont.woff2') format('woff2'),
+    src: url('../type/bebasneue_book-webfont.woff2') format('woff2'),
          url('../type/bebasneue_book-webfont.woff') format('woff'),
-         url('../type/bebasneue_book-webfont.ttf') format('truetype'),
-         url('../type/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+         url('../type/bebasneue_book-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'bebas_neuelight';
-    src: url('../type/bebasneue_light-webfont.eot');
-    src: url('../type/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/bebasneue_light-webfont.woff2') format('woff2'),
+    src: url('../type/bebasneue_light-webfont.woff2') format('woff2'),
          url('../type/bebasneue_light-webfont.woff') format('woff'),
-         url('../type/bebasneue_light-webfont.ttf') format('truetype'),
-         url('../type/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+         url('../type/bebasneue_light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'bebas_neue_regularregular';
-    src: url('../type/bebasneue_regular-webfont.eot');
-    src: url('../type/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/bebasneue_regular-webfont.woff2') format('woff2'),
+    src: url('../type/bebasneue_regular-webfont.woff2') format('woff2'),
          url('../type/bebasneue_regular-webfont.woff') format('woff'),
-         url('../type/bebasneue_regular-webfont.ttf') format('truetype'),
-         url('../type/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+         url('../type/bebasneue_regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -179,6 +167,11 @@ a {
 a:active,
 a:hover {
   outline: 0;
+}
+
+a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 /* Text-level semantics
@@ -1251,12 +1244,6 @@ ul {
     height: 100%;
 }
 
-/* Yuk! CSS Hack for IE6 3 pixel bug :( */
-* html .jspCorner
-{
-    margin: 0 -3px 0 0;
-}
-
 /* Layout Utilities (added during cleanup)
    ========================================================================== */
 
@@ -1331,4 +1318,31 @@ ul {
 .spacer-160 {
   display: block;
   height: 160pt;
+}
+
+/* Responsive - allow horizontal scroll on mobile
+   ========================================================================== */
+@media (max-width: 1250px) {
+  html, body, .container, div#container, div.container {
+    width: auto;
+    min-width: 320px;
+    overflow-x: auto;
+  }
+}
+
+/* Accessibility - Skip Link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }

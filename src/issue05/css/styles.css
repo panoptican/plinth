@@ -103,6 +103,11 @@ a:hover {
   outline-width: 0;
 }
 
+a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 /* Text-level semantics
    ========================================================================== */
 
@@ -426,59 +431,49 @@ textarea {
 /* Type */
 @font-face {
     font-family: 'linux_biolinum_oregular';
-    src: url('../type/linbiolinum_r-webfont.eot');
-    src: url('../type/linbiolinum_r-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_r-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_r-webfont.woff') format('woff'),
-         url('../type/linbiolinum_r-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_r-webfont.svg#linux_biolinum_oregular') format('svg');
+         url('../type/linbiolinum_r-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'linux_biolinum_obold';
-    src: url('../type/linbiolinum_rb-webfont.eot');
-    src: url('../type/linbiolinum_rb-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_rb-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_rb-webfont.woff') format('woff'),
-         url('../type/linbiolinum_rb-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_rb-webfont.svg#linux_biolinum_obold') format('svg');
+         url('../type/linbiolinum_rb-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'linux_biolinum_oitalic';
-    src: url('../type/linbiolinum_ri-webfont.eot');
-    src: url('../type/linbiolinum_ri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
+    src: url('../type/linbiolinum_ri-webfont.woff2') format('woff2'),
          url('../type/linbiolinum_ri-webfont.woff') format('woff'),
-         url('../type/linbiolinum_ri-webfont.ttf') format('truetype'),
-         url('../type/linbiolinum_ri-webfont.svg#linux_biolinum_oitalic') format('svg');
+         url('../type/linbiolinum_ri-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'museo_slab500';
-    src: url('../type/Museo_Slab_500_2-webfont.eot');
-    src: url('../type/Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+    src: url('../type/Museo_Slab_500_2-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500_2-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+         url('../type/Museo_Slab_500_2-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'museo_slab500_italic';
-    src: url('../type/Museo_Slab_500italic-webfont.eot');
-    src: url('../type/Museo_Slab_500italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
+    src: url('../type/Museo_Slab_500italic-webfont.woff2') format('woff2'),
          url('../type/Museo_Slab_500italic-webfont.woff') format('woff'),
-         url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype'),
-         url('../type/Museo_Slab_500italic-webfont.svg#museo_slab500_italic') format('svg');
+         url('../type/Museo_Slab_500italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 /* Content */
 .content {
@@ -619,4 +614,31 @@ h2 {
 .spacer-160 {
   display: block;
   height: 160pt;
+}
+
+/* Responsive - allow horizontal scroll on mobile
+   ========================================================================== */
+@media (max-width: 1250px) {
+  html, body, .container, div#container, div.container {
+    width: auto;
+    min-width: 320px;
+    overflow-x: auto;
+  }
+}
+
+/* Accessibility - Skip Link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }

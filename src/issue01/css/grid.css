@@ -4,70 +4,58 @@ Type
 
 @font-face {
     font-family: 'lacuna_regularregular';
-    src: url('/issue01/type/lacuna-webfont.eot');
-    src: url('/issue01/type/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/lacuna-webfont.woff') format('woff'),
-         url('/issue01/type/lacuna-webfont.ttf') format('truetype'),
-         url('/issue01/type/lacuna-webfont.svg#lacuna_regularregular') format('svg');
+    src: url('/issue01/type/lacuna-webfont.woff') format('woff'),
+         url('/issue01/type/lacuna-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'lacuna_italicregular';
-    src: url('/issue01/type/lacuna-italic-webfont.eot');
-    src: url('/issue01/type/lacuna-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
-         url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype'),
-         url('/issue01/type/lacuna-italic-webfont.svg#lacuna_italicregular') format('svg');
+    src: url('/issue01/type/lacuna-italic-webfont.woff') format('woff'),
+         url('/issue01/type/lacuna-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
 @font-face {
     font-family: 'NoticiaTextRegular';
-    src: url('/issue01/type/NoticiaText-Regular-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Regular-webfont.svg#NoticiaTextRegular') format('svg');
+    src: url('/issue01/type/NoticiaText-Regular-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'NoticiaTextItalic';
-    src: url('/issue01/type/NoticiaText-Italic-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Italic-webfont.svg#NoticiaTextItalic') format('svg');
+    src: url('/issue01/type/NoticiaText-Italic-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'NoticiaTextBold';
-    src: url('/issue01/type/NoticiaText-Bold-webfont.eot');
-    src: url('/issue01/type/NoticiaText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-Bold-webfont.svg#NoticiaTextBold') format('svg');
+    src: url('/issue01/type/NoticiaText-Bold-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'NoticiaTextBoldItalic';
-    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot');
-    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype'),
-         url('/issue01/type/NoticiaText-BoldItalic-webfont.svg#NoticiaTextBoldItalic') format('svg');
+    src: url('/issue01/type/NoticiaText-BoldItalic-webfont.woff') format('woff'),
+         url('/issue01/type/NoticiaText-BoldItalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /*	--------------------------------------------------
@@ -105,9 +93,10 @@ em { font-style: italic; }
 strong { font-weight: bold;}
 small { font-size: 80%; }
 
-a, a:visited { color: #000000; text-decoration: none; outline: 0; }
+a, a:visited { color: #000000; text-decoration: none; }
 a:visited { color: #656263 }
 a:hover, a:focus { color: #918987; }
+a:focus { outline: 2px solid currentColor; outline-offset: 2px; }
 p a, p a:visited { line-height: inherit; color: #656263}
 
 /*	--------------------------------------------------
@@ -121,7 +110,7 @@ Grid
 .column-row, .row { margin: 0 0 2px -20px; }
 .column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
  
-.zero { width: 15px;}
+.zero { width: 30px;}
 .one { width: 70px; }
 .two { width: 146px; }
 .three { width: 222px; }
@@ -157,21 +146,8 @@ Grid
  
 /* Clear the columns automagically, thanks @kneath */
 .column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-* html .column-row, * html .row, * html .clearfix { height: 1%; }
 .column-row, .row, .clearfix { display: inline-block; }
 .column-row, .row, .clearfix { display: block; }
- 
-/*	IE6 Problems ---------- */
-body.ie .column-row { width: 1216px; }
-body.ie .eight .column-row	 { width: 608px; }
-body.ie .nine .column-row	 { width: 684px; }
-body.ie .ten .column-row	 { width: 760px; }
-body.ie .eleven .column-row { width: 836px; }
-body.ie .twelve .column-row	 { width: 912px; }
-body.ie .thirteen .column-row	{ width: 988px; }
-body.ie .fourteen .column-row	{ width: 1064px; }
-body.ie .fifteen .column-row	{ width: 1140px; }
-body.ie .two-thirds .column-row { width: 614px; }
 /* Layout Utilities
    ========================================================================== */
 
@@ -250,4 +226,70 @@ body.ie .two-thirds .column-row { width: 614px; }
 .spacer-160 {
   display: block;
   height: 160pt;
+}
+
+/* Logo footer - replaces <br><br><br>&nbsp;&nbsp; before footer logos */
+.logo-footer {
+  margin-top: 60px;
+  margin-left: 24px;
+}
+
+/* Section divider spacer - replaces <br><br><br><br> before : : : : : dividers */
+.section-divider-spacer {
+  display: block;
+  height: 80px;
+}
+
+/* Prose and verse typography classes - replaces common inline styles */
+.prose {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 1em;
+}
+
+.verse {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+
+.verse-indent {
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.prose-indent {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsive - allow horizontal scroll on mobile
+   ========================================================================== */
+@media (max-width: 1250px) {
+  html, body, .container, div#container, div.container {
+    width: auto;
+    min-width: 320px;
+    overflow-x: auto;
+  }
+}
+
+/* Accessibility - Skip Link
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.5em 1em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
 }
