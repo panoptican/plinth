@@ -74,6 +74,11 @@ build/Release
 node_modules
 jspm_packages
 
+# QA artifacts
+.playwright-cli/
+output/playwright/
+.venv-visual-audit/
+
 # Optional npm cache directory
 .npm
 
