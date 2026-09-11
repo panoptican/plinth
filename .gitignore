@@ -30,6 +30,7 @@ temp/
 
 # Claude Code
 CLAUDE.md
+AGENTS.md
 .claude/
 .agents/
 
