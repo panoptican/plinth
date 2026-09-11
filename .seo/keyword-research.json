@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "domain_rank": null,
+    "rank_scale": "one_hundred",
+    "source": "none",
+    "as_of": "2026-09-11"
+  },
+  "difficulty": {
+    "playable_bucket": "easy",
+    "kd_source": "none",
+    "derived_at": "2026-09-11",
+    "evidence": []
+  },
+  "gsc_baseline": null,
+  "clusters": {},
+  "candidates": []
+}
