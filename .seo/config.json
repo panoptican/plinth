@@ -75,15 +75,15 @@
   ],
   "_comment_content_surfaces": "Where public pages live in this repo. Empty for a DB or CMS-backed site \u2014 record the CMS above and read the sitemap instead.",
   "priority_pages": [
-    "https://plinth.us/index.html",
-    "https://plinth.us/issue07/index.html",
-    "https://plinth.us/issue01/index.html"
+    "https://plinth.us/",
+    "https://plinth.us/issue07/",
+    "https://plinth.us/issue01/"
   ],
   "_comment_priority_pages": "The URLs whose accuracy and reachability matter most. Sampling and claim re-verification key off this list.",
   "crawl_hubs": [
-    "/index.html",
-    "/issue07/index.html",
-    "/issue01/index.html"
+    "/",
+    "/issue07/",
+    "/issue01/"
   ],
   "_comment_crawl_hubs": "Pages Google crawls most often, from batch_url_inspection last_crawled (references/gsc.md \u00a77a). Every new page takes \u22651 inbound link from here. Re-derive every few months.",
   "authority": {
