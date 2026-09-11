@@ -45,7 +45,7 @@
     }
   },
   "gsc": {
-    "site_url": null,
+    "site_url": "sc-domain:plinth.us",
     "_comment": "The EXACT property string from list_properties. 'sc-domain:example.com' and 'https://example.com/' are not interchangeable. null means the site is not verified in this Google account \u2014 say it once and carry on."
   },
   "bing": {
