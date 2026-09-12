@@ -1,0 +1,15 @@
+{
+  "target": "https://plinth.us/issue02/oleary",
+  "source": "src/issue02/oleary.html",
+  "fields": [
+    "og:description",
+    "twitter:description"
+  ],
+  "before": "TWO AMANITA ODES by Peter O",
+  "after": "TWO AMANITA ODES by Peter O'Leary - PLINTH Issue 02",
+  "canonical_description": "TWO AMANITA ODES by Peter O'Leary - PLINTH Issue 02",
+  "source_check": "Passed: both social descriptions now match the canonical meta description; the truncated value is absent.",
+  "local_render_check": "Passed: local static server returned the corrected meta, Open Graph, and Twitter descriptions.",
+  "production_check": "Pending deployment verification.",
+  "date_modified": "Not applicable: this static page has no date_modified field or Article schema."
+}
