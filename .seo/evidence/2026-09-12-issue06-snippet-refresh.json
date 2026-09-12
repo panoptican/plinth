@@ -1,0 +1,25 @@
+{
+  "action": "refresh",
+  "url": "https://plinth.us/issue06/",
+  "search_console_evidence": {
+    "date_range": "Last 3 months",
+    "impressions": 756,
+    "clicks": 3,
+    "ctr": "0.4%",
+    "average_position": 8.1,
+    "query_pattern": "20 queries centered on Subashini Navaratnam and family-name variants"
+  },
+  "before": {
+    "title": ". PLINTH . [issue 06]",
+    "description": "Read PLINTH issue 06, an experimental literary journal archive of poetry, philosophy, fable, and strange forms."
+  },
+  "after": {
+    "title": "Room by Subashini Navaratnam and more — PLINTH Issue 06",
+    "description": "Read Room by Subashini Navaratnam and other experimental poetry and prose in PLINTH issue 06, an archived literary journal issue."
+  },
+  "verification": {
+    "live_metadata": "Title, description, Open Graph, and Twitter metadata match the new copy.",
+    "live_health": "82 pages, 0 violations, 0 broken internal targets, 0 redirecting internal targets.",
+    "sitemap": "Search Console still shows the prior Sep 11 read and 87 discovered pages; the valid submission was left intact because the UI offered no refresh action."
+  }
+}
