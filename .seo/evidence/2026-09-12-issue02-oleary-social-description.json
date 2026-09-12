@@ -10,6 +10,6 @@
   "canonical_description": "TWO AMANITA ODES by Peter O'Leary - PLINTH Issue 02",
   "source_check": "Passed: both social descriptions now match the canonical meta description; the truncated value is absent.",
   "local_render_check": "Passed: local static server returned the corrected meta, Open Graph, and Twitter descriptions.",
-  "production_check": "Pending deployment verification.",
+  "production_check": "Passed: after deployment https://plinth.us/issue02/oleary serves the corrected meta, Open Graph, and Twitter descriptions; deployment preview was https://b089e4d8.plinth-4pc.pages.dev.",
   "date_modified": "Not applicable: this static page has no date_modified field or Article schema."
 }
