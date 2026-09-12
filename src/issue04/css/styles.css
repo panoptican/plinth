@@ -497,30 +497,6 @@ th {
   padding: 0;
 }
 
-/* Page Border
-   ========================================================================== */
-
-.splash-top, .splash-bottom, .splash-left, .splash-right {
-    background: rgb(222, 250, 211);
-    position: fixed;
-    z-index: 3;
-}
-
-.splash-top { top: 0; }
-.splash-bottom { bottom: 0; }
-.splash-left { left: 0; }
-.splash-right { right: 0; }
-
-.splash-left, .splash-right {
-    top: 0; bottom: 0;
-    width: 20px;
-}
-
-.splash-top, .splash-bottom {
-    left: 0; right: 0;
-    height: 20px;
-}
-
 .contents-top, .contents-bottom, .contents-left, .contents-right {
     background: rgb(22, 18, 74);
     position: fixed;
