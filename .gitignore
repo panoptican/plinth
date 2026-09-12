@@ -18,6 +18,10 @@ Thumbs.db
 .dev.vars.*
 .wrangler/
 
+# Local Search Console exports may contain private query and coverage data
+.seo/gsc/*.zip
+.seo/gsc/*-export-analysis.md
+
 # Build and tool caches
 dist/
 out/
