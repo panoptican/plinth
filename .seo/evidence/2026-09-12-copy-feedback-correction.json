@@ -1,0 +1,15 @@
+{
+  "action": "correct",
+  "scope": "site-wide journal metadata language and issue index title standardization",
+  "changes": {
+    "files": 22,
+    "description_language": "Replaced archive-oriented description phrasing with experimental literary journal of poetry, philosophy, fable, and strange forms.",
+    "issue06_index_title": ". PLINTH . [issue 06]",
+    "issue06_index_description": "Retains the query-relevant Room and Subashini Navaratnam detail while using the approved journal description language."
+  },
+  "verification": {
+    "local": "82 HTML pages, 0 duplicate titles, 0 duplicate descriptions, and no archived literary journal wording in descriptions.",
+    "live": "Representative homepage, issue 01, issue 06, and issue 07 submissions metadata uses the requested language.",
+    "health": "82 pages, 0 violations, 0 broken internal targets, 0 redirecting internal targets."
+  }
+}
