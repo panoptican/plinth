@@ -1,0 +1,28 @@
+{
+  "action": "repair",
+  "target": "five retired splash routes",
+  "urls": [
+    "https://plinth.us/issue02/splash",
+    "https://plinth.us/issue03/splash",
+    "https://plinth.us/issue04/splash",
+    "https://plinth.us/issue05/splash",
+    "https://plinth.us/issue06/splash"
+  ],
+  "before": {
+    "status": "200",
+    "sitemap_entries": 5,
+    "source_files": 5
+  },
+  "after": {
+    "status": "301 to the corresponding issue index",
+    "sitemap_entries": 0,
+    "source_files": 0
+  },
+  "verification": {
+    "legacy_url_forms": "Both /splash and /splash.html return 301 for all five issues.",
+    "issue_indexes": "The five destination issue indexes return 200.",
+    "live_sitemap": "82 URLs and zero splash entries.",
+    "live_health": "82 pages, 0 broken internal targets, 0 redirecting internal targets.",
+    "remaining_health_candidates": "10 orphan candidates remain: nine issue 03 image-map pages that use <area> links and the intentionally retained closed issue 07 submissions page."
+  }
+}
