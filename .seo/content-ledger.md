@@ -21,13 +21,15 @@ predate the ledger and are measured through the sitemap/health census first.
 
 > The closed loop. Filled by **Step 0.5** of a later run from GSC (`references/gsc.md` §2), seeded as `unmeasured` when a piece ships. Runs are stateless, so an unwritten measurement never happened. State ∈ winning | close | wrong-query | invisible | unmeasured | too-new | no-data (pre-window).
 >
-> **Backfilled:** {{DATE_OR_NEVER}} — set on the first GSC-aware run over an existing library (`gsc.md` §2b). Until it's set, assume no piece has ever been measured and backfill all of them in one pass before selecting anything.
+> **Backfilled:** 2026-09-12 — site-level Search Console performance was captured manually in Chrome; page-level states remain unmeasured because the API/MCP connector is unavailable.
 >
 > Adding this section to an older ledger? **Append it and match that file's own column style.** Don't renumber, reorder, or normalize the sections already there.
 
 | Slug / URL | Published | Indexed? (state · checked) | Read @28d (clicks · impr · pos) | Read @56d (clicks · impr · pos) | Site-wide same window (clicks · impr) | Best lever (recover/CTR/rank · est. clicks) | State | Note / next action |
 |---|---|---|---|---|---|---|---|---|
-No Search Console data is connected yet.
+Search Console is verified for `sc-domain:plinth.us` and a site-level baseline is recorded in
+`.seo/keyword-research.json`; page-level index and performance rows remain unmeasured until
+the Search Console API/MCP connection is available.
 
 <!-- Two clocks. Index status: check ~3 days after deploy, on anything published in the last 30 days not yet confirmed indexed. Performance: measure any piece live 21+ days and not measured in the last 30. -->
 <!-- Indexed? holds the coverage state verbatim (e.g. "Submitted and indexed", "Crawled - currently not indexed", "URL is unknown to Google", "noindex") plus the date checked. Each state has a different fix — see references/gsc.md §3a. -->

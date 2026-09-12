@@ -11,7 +11,17 @@
     "derived_at": "2026-09-11",
     "evidence": []
   },
-  "gsc_baseline": null,
+  "gsc_baseline": {
+    "property": "sc-domain:plinth.us",
+    "window": "2026-06-10 through 2026-09-09",
+    "captured": "2026-09-12",
+    "source": "Chrome Search Console UI",
+    "clicks": 35,
+    "impressions": 1840,
+    "ctr": 0.019,
+    "average_position": 12,
+    "note": "Manual baseline; Search Console API/MCP is not available in this session."
+  },
   "clusters": {},
   "candidates": []
 }

@@ -70,8 +70,7 @@
     }
   ],
   "content_surfaces": [
-    "content/",
-    "src/pages/"
+    "src/"
   ],
   "_comment_content_surfaces": "Where public pages live in this repo. Empty for a DB or CMS-backed site \u2014 record the CMS above and read the sitemap instead.",
   "priority_pages": [
@@ -136,7 +135,7 @@
     "logs": false,
     "community_search": false,
     "social_posting": false,
-    "browser": false,
+    "browser": true,
     "git": true
   },
   "tools_declined": [
@@ -230,12 +229,8 @@
     "_comment": "Product-change panel (measure.md 4b). scripts/repo_changes.py lists commits since the last run that touch these globs; a shipped feature, a price change or a removed route is the freshest demand signal the site has. Fill with this repo's real paths.",
     "watch_paths": [
       "CHANGELOG.md",
-      "docs/changelog/**",
-      "config/routes.rb",
-      "app/views/**/pricing*",
-      "config/features*",
-      "db/migrate/**",
-      "src/app/**/pricing*"
+      "README.md",
+      "src/**"
     ]
   },
   "serp": {

@@ -4,7 +4,7 @@
 
 - Domain: https://plinth.us
 - Stack: hand-authored static HTML served from `src/`.
-- Content store: repository files; 87 HTML pages across the homepage and seven
+- Content store: repository files; 82 HTML pages across the homepage and seven
   issues.
 - Sitemap: `src/sitemap.xml` → `https://plinth.us/sitemap.xml`.
 - Robots: `src/robots.txt`.
@@ -15,8 +15,8 @@
 
 | # | Phase | Pattern | Status | Notes |
 |---|---|---|---|---|
-| 0 | Technical foundations | Setup | in progress | Metadata and live crawl baseline first. |
-| 1 | Search Console connection | Measurement | blocked | Requires owner connection. |
+| 0 | Technical foundations | Setup | completed | Sitemap, canonical URLs, metadata, headings, links, and live health baseline verified. |
+| 1 | Search Console connection | Measurement | partial | Domain property and sitemap verified in Chrome; API/MCP connector is unavailable. |
 | 2 | Content and internal-link opportunities | Editorial / repair | pending | Requires Search Console or dated demand evidence. |
 
 ## Existing programmatic surface
@@ -35,6 +35,6 @@ programmatic pages until a specific demand signal and canonical owner exist.
 
 ## Next measurement questions
 
-1. Which archive pages earn impressions and clicks in Search Console?
-2. Are issue and contributor pages indexed, or are any invisible/orphaned?
-3. Does the current metadata accurately describe each page's work and issue?
+1. When will Search Console reread the updated 82-URL sitemap?
+2. Which archive pages earn impressions and clicks after the metadata corrections settle?
+3. Which pages are indexed, close, wrong-query, or invisible at page level?

@@ -10,14 +10,14 @@
 
 | Slug | URL | Title (anchor-text candidate) | Linked by |
 |---|---|---|---|
-| `/` | https://plinth.us/index.html | PLINTH issue 07 / archive entry point | All |
-| `/issue01/` | https://plinth.us/issue01/index.html | PLINTH issue 01 | Homepage and issue navigation |
-| `/issue02/` | https://plinth.us/issue02/index.html | PLINTH issue 02 | Homepage and issue navigation |
-| `/issue03/` | https://plinth.us/issue03/index.html | PLINTH issue 03 | Homepage and issue navigation |
-| `/issue04/` | https://plinth.us/issue04/index.html | PLINTH issue 04 | Homepage and issue navigation |
-| `/issue05/` | https://plinth.us/issue05/index.html | PLINTH issue 05 | Homepage and issue navigation |
-| `/issue06/` | https://plinth.us/issue06/index.html | PLINTH issue 06 | Homepage and issue navigation |
-| `/issue07/` | https://plinth.us/issue07/index.html | PLINTH issue 07 | Homepage and issue navigation |
+| `/` | https://plinth.us/ | PLINTH issue 07 / archive entry point | All |
+| `/issue01/` | https://plinth.us/issue01/ | PLINTH issue 01 | Homepage and issue navigation |
+| `/issue02/` | https://plinth.us/issue02/ | PLINTH issue 02 | Homepage and issue navigation |
+| `/issue03/` | https://plinth.us/issue03/ | PLINTH issue 03 | Homepage and issue navigation |
+| `/issue04/` | https://plinth.us/issue04/ | PLINTH issue 04 | Homepage and issue navigation |
+| `/issue05/` | https://plinth.us/issue05/ | PLINTH issue 05 | Homepage and issue navigation |
+| `/issue06/` | https://plinth.us/issue06/ | PLINTH issue 06 | Homepage and issue navigation |
+| `/issue07/` | https://plinth.us/issue07/ | PLINTH issue 07 | Homepage and issue navigation |
 
 ### Features
 
@@ -47,9 +47,9 @@ derived from the live crawl before adding editorial links.
 
 | URL | Last crawled | Read on |
 |---|---|---|
-| https://plinth.us/index.html | not connected | 2026-09-11 |
-| https://plinth.us/issue07/index.html | not connected | 2026-09-11 |
-| https://plinth.us/issue01/index.html | not connected | 2026-09-11 |
+| https://plinth.us/ | Search Console API not connected | 2026-09-12 |
+| https://plinth.us/issue07/ | Search Console API not connected | 2026-09-12 |
+| https://plinth.us/issue01/ | Search Console API not connected | 2026-09-12 |
 
 ---
 

@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "claim": "PLINTH has seven issue directories",
+    "paths": [
+      "README.md",
+      "src/index.html",
+      "src/sitemap.xml"
+    ],
+    "must_not_match": [],
+    "must_match": ["issue0[1-7]"]
+  },
+  {
+    "claim": "PLINTH's production domain is plinth.us",
+    "paths": [
+      "README.md",
+      "src/**/*.html",
+      "src/robots.txt",
+      "src/sitemap.xml"
+    ],
+    "must_not_match": ["https://plinth\\.com"],
+    "must_match": ["https://plinth\\.us"]
+  }
+]
