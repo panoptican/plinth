@@ -593,6 +593,8 @@ a, a:visited, a:active, a:hover {
   transform: scaleX(-1);
 }
 .toc-rule {
+  /* Preserve the spacing between entries without drawing separator marks. */
+  visibility: hidden;
   width: 10px;
   color: #7E7E7E;
   margin-top: 0px;
