@@ -43,6 +43,92 @@
       white-space: nowrap;
       border: 0;
     }
+    /* Poster hotspots: the focus ring is for keyboard users, so it stays off
+       for mouse clicks and taps, and the tap flash is switched off to match. */
+    area {
+      -webkit-tap-highlight-color: transparent;
+    }
+    area:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    /* Responsive: below its natural width the poster becomes fluid (its image
+       map is rescaled by the script at the end of the page). On phones and
+       touch tablets, where the scaled poster is too small to read or tap, the
+       text table of contents is shown beneath it. A narrow desktop window
+       only gets the fluid poster. Nothing here applies at desktop widths. */
+    @font-face {
+      font-family: 'NoticiaTextRegular';
+      src: url('type/NoticiaText-Regular-webfont.woff') format('woff'),
+           url('type/NoticiaText-Regular-webfont.ttf') format('truetype');
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'NoticiaTextBold';
+      src: url('type/NoticiaText-Bold-webfont.woff') format('woff'),
+           url('type/NoticiaText-Bold-webfont.ttf') format('truetype');
+      font-display: swap;
+    }
+    @media (max-width: 1250px) {
+      body {
+        margin: 0;
+      }
+      img[usemap="#toc"] {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @media (max-width: 740px), (max-width: 1250px) and (pointer: coarse) {
+      .toc-list {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 48px 24px 72px;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+        text-align: center;
+        font: 16px/1.4 'NoticiaTextRegular', serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .toc-list ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .toc-list li {
+        margin: 0 0 28px;
+      }
+      .toc-list a {
+        display: inline-block;
+        padding: 4px 0;
+        color: #000;
+        text-decoration: none;
+      }
+      .toc-list a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .toc-list a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+      .toc-title,
+      .toc-pages a {
+        display: block;
+        font: 20px/1.2 'NoticiaTextBold', serif;
+      }
+      .toc-by {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+      }
+      .toc-pages {
+        padding-top: 36px !important;
+      }
+      .toc-pages li {
+        margin-bottom: 12px;
+      }
+    }
   </style>
 </head>
   <body>
@@ -65,22 +151,52 @@
         <area alt="from The Colony by Dan Hoy" title="from The Colony by Dan Hoy" href="hoy" shape="rect" coords="60, 228, 172, 425" />
     </map>
 
-    <nav class="sr-only" aria-label="Issue 03 table of contents">
+    <!-- Hidden on desktop, where the poster is the table of contents. On small
+         screens the poster is too small to read, so this list is shown below it. -->
+    <nav class="sr-only toc-list" aria-label="Issue 03 table of contents">
       <ul>
-        <li><a href="linnea">Meat Prohibitions by Aurora Linnea</a></li>
-        <li><a href="steidle">Our Bellies Are Full Of by Beth Steidle</a></li>
-        <li><a href="fest">Three Poems by Bradley J Fest</a></li>
-        <li><a href="hammer">Suspiriac by Scott Hammer</a></li>
+        <li><a href="hoy"><span class="toc-title">from The Colony</span> <span class="toc-by">by</span> <span class="toc-author">Dan Hoy</span></a></li>
+        <li><a href="conn"><span class="toc-title">The Hub</span> <span class="toc-by">by</span> <span class="toc-author">Brian Conn</span></a></li>
+        <li><a href="anderson"><span class="toc-title">Five Poems</span> <span class="toc-by">by</span> <span class="toc-author">Shane Anderson</span></a></li>
+        <li><a href="stallings"><span class="toc-title">The Face</span> <span class="toc-by">by</span> <span class="toc-author">Andy Stallings</span></a></li>
+        <li><a href="linnea"><span class="toc-title">Meat Prohibitions</span> <span class="toc-by">by</span> <span class="toc-author">Aurora Linnea</span></a></li>
+        <li><a href="parko"><span class="toc-title">We Held / We Each</span> <span class="toc-by">by</span> <span class="toc-author">Kim Parko</span></a></li>
+        <li><a href="steidle"><span class="toc-title">Our Bellies Are Full Of</span> <span class="toc-by">by</span> <span class="toc-author">Beth Steidle</span></a></li>
+        <li><a href="fest"><span class="toc-title">Three Poems</span> <span class="toc-by">by</span> <span class="toc-author">Bradley J Fest</span></a></li>
+        <li><a href="hammer"><span class="toc-title">Suspiriac</span> <span class="toc-by">by</span> <span class="toc-author">Scott Hammer</span></a></li>
+      </ul>
+      <ul class="toc-pages">
         <li><a href="archive">Archive</a></li>
         <li><a href="about">About</a></li>
         <li><a href="submissions">Submissions</a></li>
-        <li><a href="parko">We Held / We Each by Kim Parko</a></li>
-        <li><a href="anderson">Five Poems by Shane Anderson</a></li>
-        <li><a href="conn">The Hub by Brian Conn</a></li>
-        <li><a href="stallings">The Face by Andy Stallings</a></li>
-        <li><a href="hoy">from The Colony by Dan Hoy</a></li>
       </ul>
     </nav>
+
+    <script>
+      // The poster's image map is authored at the image's natural size, so the
+      // hotspots are rescaled whenever the poster is displayed smaller.
+      (function () {
+        var img = document.querySelector('img[usemap="#toc"]');
+        var areas = Array.prototype.slice.call(document.querySelectorAll('#toc area'));
+        var original = areas.map(function (area) {
+          return area.coords.split(',').map(Number);
+        });
+
+        function rescale() {
+          if (!img.naturalWidth) return;
+          var k = img.clientWidth / img.naturalWidth;
+          areas.forEach(function (area, i) {
+            area.coords = original[i].map(function (n) {
+              return Math.round(n * k);
+            }).join(', ');
+          });
+        }
+
+        img.addEventListener('load', rescale);
+        window.addEventListener('resize', rescale);
+        rescale();
+      })();
+    </script>
     
   </body>
 </html>

@@ -103,7 +103,13 @@ a:hover {
   outline-width: 0;
 }
 
-a:focus {
+/* The focus ring is for keyboard users: :focus-visible leaves it off for
+   mouse clicks and taps, and the tap flash is switched off to match. */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
@@ -616,13 +622,170 @@ h2 {
   height: 160pt;
 }
 
-/* Responsive - allow horizontal scroll on mobile
-   ========================================================================== */
-@media (max-width: 1250px) {
-  html, body, .container, div#container, div.container {
+/* Responsive
+   ==========================================================================
+   The desktop design is fluid (20% side margins, fixed title bar) and holds
+   up down to tablet landscape, so nothing here applies from 1000px up.
+   Below that the side margins tighten; on phones the title bar stops being
+   fixed, so long titles can wrap and the text gets the whole screen.
+   Selectors start with `body` to outrank each page's inline <style>, which
+   sets the per-piece colours and title bar. (The index carries its own
+   responsive rules inline.) */
+/* The fixed title bar is 100% wide plus 20% padding. Nothing shows past the
+   screen edge, but on touch tablets the extra width lets the page pan
+   sideways, so the width is reduced by the padding. */
+@media (max-width: 1399px) {
+  body .title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 999px) {
+  body .content {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-wrap: break-word;
+  }
+
+  body .title {
+    width: calc(80% - 110px);
+    height: auto; /* two-line titles grow the bar instead of spilling out */
+    min-height: 120px;
+    padding-left: 10%;
+    padding-right: calc(10% + 110px); /* keeps titles clear of the glyph */
+    padding-bottom: 8px;
+  }
+
+  body .title h1 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  body .title h2 {
+    margin-bottom: 0;
+  }
+
+  body .content {
+    padding-top: 250px;
+  }
+
+  body .title img {
+    right: 10%;
+  }
+
+  body .content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Verse (paragraphs broken with <br>) is only nominally justified on
+     desktop, since every line ends in a forced break, so wrapped verse lines
+     stay ragged and unhyphenated. */
+  body .content p:has(br):not(.text-center):not(.text-right) {
+    text-align: left;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+
+  @supports (text-indent: -1.5em each-line) {
+    body .content p:has(br):not(.text-center):not(.text-right) {
+      padding-left: 1.5em;
+      text-indent: -1.5em each-line;
+    }
+  }
+
+  body .columned {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 36px;
+    -moz-column-gap: 36px;
+    column-gap: 36px;
+  }
+
+  body .email-form input[type="email"] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 525px;
+    height: auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  body .title {
+    position: relative;
     width: auto;
-    min-width: 320px;
-    overflow-x: auto;
+    height: auto;
+    min-height: 96px;
+    padding: 26px 96px 14px 26px;
+  }
+
+  body .title h1 {
+    margin-top: 0;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  body .title h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  body .title h2 a {
+    display: inline-block;
+    padding: 4px 0;
+  }
+
+  body .title img {
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    height: 64px;
+  }
+
+  body .content {
+    margin-left: 26px;
+    margin-right: 26px;
+    padding-top: 48px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  body .columned {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  body .title-piece {
+    width: auto;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  body .additional-pieces {
+    margin-top: 200px;
+  }
+
+  /* Fixed-width verse blocks never exceed the column */
+  body .content div[style*="width: 300px"] {
+    max-width: 100%;
+  }
+
+  /* Inset epigraphs keep a smaller inset */
+  body .content p[style*="padding-left: 40px"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  body .credit {
+    margin-top: 160px;
+  }
+
+  body .email-form input[type="email"] {
+    font-size: 16px; /* stops iOS zooming the page on focus */
   }
 }
 

@@ -63,18 +63,23 @@ Keep these (required):
 
 Many inline styles exist for precise art-directed positioning. Only extract to classes if patterns repeat 10+ times.
 
+### Responsive Layouts
+
+Each issue's CSS ends with a "Responsive" section of `max-width` media queries. Desktop rendering must stay pixel-identical, so put small-screen changes inside those blocks only. Breakpoints differ per issue (the width where that fixed design stops fitting). jScrollPane is attached only at desktop widths via each issue's `js/scroll-pane.js`.
+
 ### Testing Changes
 
 Manual visual comparison:
 1. Screenshot before/after at same scroll position
 2. Verify desktop Chrome/Firefox appearance unchanged
-3. Verify mobile can scroll horizontally to view content
+3. Verify phone (375px) and tablet (768px, 1024px) layouts: no horizontal page scroll, content readable
 4. Tab through page to verify focus states visible
 
 ## Reference Documents
 
 - `plans/MODERNIZATION_PLAN.md` - Detailed modernization phases and rationale
 - `plans/ALT_TEXT_CHECKLIST.md` - Image accessibility audit
+- `plans/RESPONSIVE_PLAN.md` - Responsive rules per issue, breakpoints, and the screenshot/overflow QA harness (`plans/responsive-qa/`)
 
 ## Site URLs
 

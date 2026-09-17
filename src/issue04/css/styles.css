@@ -169,7 +169,13 @@ a:hover {
   outline: 0;
 }
 
-a:focus {
+/* The focus ring is for keyboard users: :focus-visible leaves it off for
+   mouse clicks and taps, and the tap flash is switched off to match. */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
@@ -598,6 +604,44 @@ th {
 .drop a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: rgb(8, 0, 52);
+}
+
+/* Index legibility
+   ==========================================================================
+   A contrast pass on the index, at every width. The plate is washed with the
+   frame's navy so the light text set over it holds (it used to sit on the
+   palest parts of the photograph), links over the plate stay light in every
+   state (visited ones used to turn navy), and the ghosted nav items use a
+   muted navy instead of pale green on white. */
+
+.image-box {
+    background: rgba(22, 18, 74, 0.6);
+}
+
+/* The rules that cross the plate stay above the wash (their own z-index of
+   1 is set further down, hence the element selectors) */
+div.horizontal,
+div.crossbar-2 {
+    z-index: 2;
+}
+
+.col-2 a:link, .col-2 a:visited, .col-2 a:active,
+.col-2 .toc-active a:link, .col-2 .toc-active a:visited, .col-2 .toc-active a:active {
+    color: white;
+}
+
+.col-2 a:hover,
+.col-2 .toc-active a:hover {
+    color: rgb(222, 250, 211);
+}
+
+.toc-inactive {
+    color: rgba(22, 18, 74, 0.4);
+}
+
+.col-2 .toc-inactive {
+    color: rgb(222, 250, 211);
+    opacity: 0.75;
 }
 
 /* Shapes
@@ -1296,13 +1340,354 @@ ul {
   height: 160pt;
 }
 
-/* Responsive - allow horizontal scroll on mobile
-   ========================================================================== */
-@media (max-width: 1250px) {
-  html, body, .container, div#container, div.container {
+/* Responsive
+   ==========================================================================
+   The desktop design is absolutely positioned and needs about 1380px of
+   width (its right-hand rule sits at 1332px), so nothing in this section
+   applies from 1380px up. Below that:
+
+   - Content pages keep the frame and the left rail (split wordmark, rule,
+     links), now fixed in place, while the attribution and text flow down the
+     page (jScrollPane is gated in js/scroll-pane.js).
+   - The index keeps its three columns, centred, with the rules rebuilt from
+     the column headers instead of page coordinates.
+   - Phones (and short landscape screens) stack everything in one column. */
+@media (max-width: 1379px) {
+  /* Content pages: fixed left rail, shifted 45px towards the edge */
+  .drop,
+  .sidebar-top,
+  .sidebar-bottom,
+  .sidebar-arrow,
+  .sidebar-links,
+  span.journal {
+    position: fixed;
+  }
+
+  .drop { left: 70px; }
+  span.journal { left: 60px; }
+  .sidebar-top, .sidebar-bottom { left: 158px; }
+  .sidebar-arrow { left: 154px; }
+  .sidebar-links { left: 143px; }
+
+  /* Content pages: attribution and text flow in the page */
+  main:has(.content) {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 108px 48px 100px 270px;
+  }
+
+  [class^="attribution-bar"] {
+    display: none;
+  }
+
+  .attribution {
+    position: static;
     width: auto;
-    min-width: 320px;
-    overflow-x: auto;
+    margin-bottom: 48px;
+    padding: 0 12px 14px 0;
+    border-right: 3px solid rgb(22, 18, 74);
+    border-bottom: 3px solid rgb(222, 250, 211);
+  }
+
+  .content {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 0;
+    overflow-wrap: break-word;
+  }
+
+  .content p {
+    margin-left: 0;
+    margin-right: 0;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  .content p:has(br) {
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+
+  .content h3 {
+    margin-left: 0;
+  }
+
+  .email-form input[type="email"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 525px;
+    height: auto;
+    margin: 10px auto 0;
+  }
+
+  /* Index: three centred columns under the wordmark */
+  h1.journal { left: 48px; }
+  .left-vert { left: 122px; }
+
+  .horizontal {
+    left: 122px;
+    right: 48px;
+    width: auto;
+  }
+
+  .right-vert {
+    left: auto;
+    right: 48px;
+  }
+
+  .crossbar-1, .crossbar-2, .crossbar-3,
+  .dropbar-1, .dropbar-2, .dropbar-3,
+  .arrows-1, .arrows-2, .arrows-3 {
+    display: none;
+  }
+
+  main:has(.col-1) {
+    display: grid;
+    grid-template-columns: minmax(0, 200px) 152px minmax(0, 200px);
+    justify-content: center;
+    align-items: start;
+    column-gap: 36px;
+    padding: 155px 60px 80px 150px;
+  }
+
+  .col-1, .col-2, .col-3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    margin: 0;
+    grid-row: 1;
+  }
+
+  .col-1 { grid-column: 1; }
+  .col-2 { grid-column: 2; padding: 0 7px 36px; }
+  .col-3 { grid-column: 3; }
+
+  /* The plate and its frame share the middle cell with the column text.
+     They keep their desktop height as a minimum but stretch with the cell,
+     so the text can never run out of the bottom of the plate. */
+  .image,
+  .image-box {
+    position: relative;
+    top: auto;
+    left: auto;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: stretch;
+    height: auto;
+    min-height: 615px;
+    margin-top: -55px;
+  }
+
+  .image {
+    width: 140px;
+    margin-top: -49px;
+    margin-bottom: 6px;
+    object-fit: cover;
+  }
+
+  /* Header rules: the short vertical bar that crosses the horizontal rule */
+  .column-header {
+    position: relative;
+  }
+
+  .column-header::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 13px);
+    left: 50%;
+    width: 3px;
+    height: 100px;
+    margin-left: -1px;
+    background: rgb(222, 250, 211);
+  }
+
+  .column-header.middle::after {
+    background: white;
+  }
+}
+
+/* Phones, small tablets and short landscape screens: one column */
+@media (max-width: 820px), (max-width: 1379px) and (max-height: 620px) {
+  .contents-left, .contents-right { width: 12px; }
+  .contents-top, .contents-bottom { height: 12px; }
+
+  /* Wordmark scales to 60%; the rule that stands in for the I follows it */
+  .drop,
+  .journal,
+  span.journal {
+    position: absolute;
+    font-size: 34px;
+    letter-spacing: 9px;
+  }
+
+  h1.journal,
+  span.journal { top: 40px; left: 32px; }
+  .drop { top: 70px; left: 38px; margin: 0; }
+
+  .sidebar-top {
+    position: absolute;
+    top: 94px;
+    left: 91px;
+    height: 96px;
+  }
+
+  .sidebar-bottom,
+  .sidebar-arrow {
+    display: none;
+  }
+
+  /* Content pages */
+  main:has(.content) {
+    padding: 128px 32px 72px;
+  }
+
+  .sidebar-links {
+    position: static;
+    margin: 0 0 56px 76px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .sidebar-toc {
+    margin: 0;
+  }
+
+  .sidebar-toc a {
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  .attribution-title {
+    font-size: 30px;
+  }
+
+  .content h3 {
+    font-size: 28px;
+    padding: 20px 0;
+  }
+
+  .divider {
+    margin: 60px 0 40px;
+  }
+
+  .bio {
+    padding-top: 70px;
+  }
+
+  /* Art-directed poem offsets are scaled to the narrow measure */
+  .content p[style*="margin-left:150px"],
+  .content p[style*="margin-left:100px"] {
+    margin-left: 24px !important;
+  }
+
+  .content p[style*="margin-left:210px"] {
+    margin-left: 40px !important;
+  }
+
+  .content p[style*="margin-left:300px"] {
+    margin-left: 64px !important;
+  }
+
+  .content p[style*="text-indent:30px"],
+  .content p[style*="text-indent:40px"] {
+    text-indent: 16px !important;
+  }
+
+  .content p[style*="text-indent:60px"] {
+    text-indent: 24px !important;
+  }
+
+  .content p[style*="text-indent:90px"],
+  .content p[style*="text-indent:95px"] {
+    text-indent: 36px !important;
+  }
+
+  .content p[style*="text-indent:110px"] {
+    text-indent: 44px !important;
+  }
+
+  .content p[style*="text-indent:160px"] {
+    text-indent: 64px !important;
+  }
+
+  .content p[style*="margin-top:600px"] {
+    margin-top: 240px !important;
+  }
+
+  .content p[style*="margin-top:150px"] {
+    margin-top: 80px !important;
+  }
+
+  .email-form input[type="email"] {
+    font-size: 16px; /* stops iOS zooming the page on focus */
+  }
+
+  /* Index */
+  .left-vert {
+    top: 64px;
+    left: 79px;
+    height: 120px;
+  }
+
+  .horizontal {
+    top: 140px;
+    left: 79px;
+    right: 12px;
+  }
+
+  .right-vert {
+    display: none;
+  }
+
+  main:has(.col-1) {
+    grid-template-columns: minmax(0, 260px);
+    row-gap: 64px;
+    padding: 176px 32px 72px;
+  }
+
+  .col-1, .col-2, .col-3,
+  .image, .image-box {
+    grid-column: 1;
+  }
+
+  .col-1 { grid-row: 1; }
+  .col-2, .image, .image-box { grid-row: 2; }
+  .col-3 { grid-row: 3; }
+
+  .col-2 {
+    justify-self: center;
+    width: 138px;
+    margin-top: 55px;
+  }
+
+  .image-box { margin-top: 0; }
+  .image { margin-top: 6px; }
+
+  .col-1 .column-header,
+  .col-3 .column-header {
+    margin-bottom: 28px;
+  }
+
+  .col-1 .column-header::after,
+  .col-3 .column-header::after {
+    display: none;
+  }
+
+  .nav {
+    margin-bottom: 28px;
+    font-size: 20px;
+  }
+
+  .toc-active a,
+  .toc li > a {
+    display: block;
+    padding: 4px 0;
   }
 }
 

@@ -106,7 +106,10 @@ small { font-size: 80%; }
 a, a:visited { color: #000000; text-decoration: none; }
 a:visited { color: #656263 }
 a:hover, a:focus { color: #918987; }
-a:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+/* The focus ring is for keyboard users: :focus-visible leaves it off for
+   mouse clicks and taps, and the tap flash is switched off to match. */
+a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 p a, p a:visited { line-height: inherit; color: #656263}
 
 /* --------------------------------------------------
@@ -216,13 +219,169 @@ Grid
   height: 160pt;
 }
 
-/* Responsive - allow horizontal scroll on mobile
-   ========================================================================== */
-@media (max-width: 1250px) {
-  html, body, .container, div#container, div.container {
+/* Responsive
+   ==========================================================================
+   Nothing in this section applies at desktop widths (1101px and up), where
+   the fixed 1080px design is untouched. Below that the five-column grid
+   becomes flexible: the empty outer columns give way first, then the content
+   columns narrow. The title and logo overlap the ziggurat plates on desktop
+   (fixed 450px / 400px cells holding taller images), so those cell heights
+   scale with the viewport to keep the same overlap. */
+@media (max-width: 1100px) {
+  html, body {
     width: auto;
-    min-width: 320px;
-    overflow-x: auto;
+    height: auto;
+  }
+
+  body {
+    padding: 0 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row::after {
+    display: none; /* clearfix pseudo-elements would become flex items */
+  }
+
+  .column {
+    float: none;
+    display: block;
+    min-width: 0;
+  }
+
+  .one { flex: 0 1 216px; width: auto; }
+  .two { flex: 0 1 432px; width: auto; }
+  .three { flex: 0 1 648px; width: auto; }
+  .five { flex: 0 1 1080px; width: 100%; }
+
+  /* Spacer columns (no alignment class, only &nbsp;) collapse first */
+  .one:not(.text-center):not(.text-right) {
+    flex-shrink: 20;
+  }
+
+  /* Plate cells: 450px of a 599px-tall image, and 400px of the 671px logo */
+  .five[style*="height: 450px"] {
+    height: min(450px, 50vw) !important;
+  }
+
+  .five[style*="400px"] {
+    height: min(400px, 52.5vw) !important;
+  }
+
+  .five[style*="400px"] img {
+    width: min(457px, 60vw);
+  }
+
+  img.align-bottom {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content {
+    overflow-wrap: break-word;
+  }
+
+  /* Justified prose hyphenates on narrow measures. Verse (paragraphs broken
+     with <br>) is only nominally justified on desktop, since every line ends
+     in a forced break, so wrapped verse lines stay ragged and unhyphenated. */
+  .content p[style*="justify"] {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  .content p:has(br) {
+    text-align: left !important;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+
+  .content p:has(br)[style*="center"] {
+    text-align: center !important;
+  }
+
+  .content p:has(br)[style*="text-align:right"] {
+    text-align: right !important;
+  }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+
+  /* Title over author instead of side by side */
+  .row:has(> .two) {
+    flex-wrap: wrap;
+  }
+
+  .row:has(> .two) > .two,
+  .row:has(> .two) > .one.text-right {
+    flex: 0 0 100%;
+    text-align: left;
+  }
+
+  .row:has(> .two) > .one:not(.text-right) {
+    display: none;
+  }
+
+  .row:has(> .two) h1,
+  .row:has(> .two) h4 {
+    margin: 0 0 4px;
+  }
+
+  /* Verse lines that must wrap get a hanging indent where supported */
+  @supports (text-indent: -1.5em each-line) {
+    .content p:has(br):not([style*="center"]) {
+      padding-left: 1.5em;
+      text-indent: -1.5em each-line;
+    }
+  }
+
+  /* Index: the three-across entries stack; the footer nav stays in a line */
+  .row:has(> .one.text-center em) {
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+  }
+
+  .row:has(> .one.text-center em) > .one {
+    flex: none;
+    width: 100%;
+  }
+
+  .row:has(> .one.text-center em) > .one:not(.text-center) {
+    display: none;
+  }
+
+  .one a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+
+  /* Reading column: drop the side margins and tighten deep indents */
+  .content p[style*="margin-left:1em"] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .content p[style*="margin-left:5.7em"],
+  .content p[style*="margin-left:10em"] {
+    margin-left: 2em !important;
+    margin-right: 0 !important;
+  }
+
+  .content p[style*="text-indent:3em"] {
+    text-indent: 1.5em !important;
   }
 }
 
