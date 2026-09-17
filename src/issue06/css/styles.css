@@ -584,6 +584,13 @@ a, a:visited, a:active, a:hover {
 .top-toc a {
   color: #7E7E7E;
 }
+/* Pieces and pages already opened light up, so the contents doubles as a
+   record of what has been read (each piece is its own #fragment URL). */
+.toc-left a:visited,
+.toc-right a:visited,
+.top-toc a:visited {
+  color: white;
+}
 .toc-right img,
 .toc-left img {
   margin-top: 10px;
