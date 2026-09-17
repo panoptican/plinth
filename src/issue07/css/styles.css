@@ -908,13 +908,356 @@ Grid
   height: 160pt;
 }
 
-/* Responsive - allow horizontal scroll on mobile
-   ========================================================================== */
+/* Responsive
+   ==========================================================================
+   Nothing in this section applies at desktop widths (1251px and up), where
+   the fixed 1210px design is untouched. Below that the grid is released:
+   the page becomes one fluid column, the reading pane joins normal document
+   flow and the nav tree on content pages collapses to a line of links.
+   This stylesheet also serves the site landing page (the numeral). */
 @media (max-width: 1250px) {
-  html, body, .container, div#container, div.container {
+  div#container, div.container {
     width: auto;
-    min-width: 320px;
-    overflow-x: auto;
+    max-width: 698px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Landing page numeral scales with the viewport */
+  .numeral a, .numeral a:visited, .numeral a:hover, .numeral a:focus {
+    font-size: clamp(120px, 40vw, 280px);
+  }
+
+  /* Content pages: title block. The bracket sits left of author + title. */
+  .row:has(> .eleven) {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 14px;
+    margin: 0 0 24px;
+  }
+
+  .row:has(> .eleven) > .column {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+
+  .row:has(> .eleven) > .zero {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .row:has(> .eleven) > .three,
+  .row:has(> .eleven) > .eleven {
+    grid-column: 2;
+  }
+
+  .row:has(> .eleven) h1 {
+    margin: 6px 0 0;
+    padding-left: 0;
+  }
+
+  /* Content pages: nav tree becomes a single line of links */
+  .row:has(> .seven) {
+    margin-left: 0;
+  }
+
+  .seven.column {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 28px;
+    width: auto;
+    margin: 0 0 40px 44px;
+  }
+
+  .seven.column .row {
+    display: contents;
+  }
+
+  .seven.column .row::after {
+    display: none; /* clearfix pseudo-elements would become flex items */
+  }
+
+  .seven.column .column {
+    display: none;
+  }
+
+  .seven.column .column:has(a) {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
+  .seven.column .toc-link {
+    margin-top: 0;
+    padding: 8px 0;
+  }
+
+  /* Content pages: reading pane flows with the page */
+  .content-container {
+    float: none;
+    display: block;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    margin: 0;
+  }
+
+  .content,
+  .attr {
+    padding: 0;
+    overflow-wrap: break-word;
+  }
+
+  /* Justified prose hyphenates on narrow measures; verse never does */
+  .text-justify {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  .logo-container {
+    height: auto;
+    max-width: 698px;
+    margin: 60px auto 0;
+    padding: 0 24px 40px;
+  }
+
+  .bottom-logo {
+    position: static;
+    display: block;
+  }
+
+  /* Index: the tree keeps its desktop measure; the plate moves below it */
+  .container-index {
+    height: auto;
+  }
+
+  .nine.column:not(.content-container),
+  .six.column {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .six.column {
+    width: auto;
+    text-align: center;
+  }
+
+  .glyph-img {
+    width: 450px;
+    height: auto;
+  }
+
+  .row:has(> .six) {
+    margin-left: 0;
+  }
+}
+
+/* Index plate sits beside the tree while there is room for both */
+@media (min-width: 1000px) and (max-width: 1250px) {
+  div.container-index {
+    max-width: none;
+  }
+
+  .row:has(> .six) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .row:has(> .six) > .nine.column {
+    flex: none;
+    margin: 0;
+  }
+
+  .row:has(> .six) > .six.column {
+    flex: 0 1 450px;
+    min-width: 0;
+    margin: 0 0 0 10px;
+  }
+}
+
+/* Phones */
+@media (max-width: 740px) {
+  div#container, div.container,
+  .logo-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .content,
+  .content strong,
+  .content em,
+  .attr {
+    line-height: 2;
+  }
+
+  .attr {
+    margin-top: 140px;
+  }
+
+  /* Art-directed white space and indents are scaled to the narrow measure */
+  .top-150, .top-160 { margin-top: 80px; }
+  .top-200 { margin-top: 100px; }
+  .top-300 { margin-top: 140px; }
+  .top-400 { margin-top: 180px; }
+  .top-800 { margin-top: 320px; }
+  .bottom-120, .bottom-150 { margin-bottom: 80px; }
+  .bottom-250 { margin-bottom: 120px; }
+
+  .indented { text-indent: 24px; }
+  .margin-25 { margin-left: 10px; }
+  .margin-40 { margin-left: 16px; }
+  .margin-50 { margin-left: 20px; }
+  .margin-60 { margin-left: 24px; }
+  .margin-70 { margin-left: 28px; }
+  .margin-90 { margin-left: 36px; }
+  .margin-100 { margin-left: 40px; }
+  .margin-120 { margin-left: 48px; }
+  .margin-140 { margin-left: 56px; }
+  .margin-150 { margin-left: 60px; }
+  .margin-160 { margin-left: 64px; }
+  .margin-180 { margin-left: 72px; }
+  .margin-190 { margin-left: 76px; }
+  .margin-200 { margin-left: 80px; }
+  .margin-240 { margin-left: 96px; }
+  .margin-260 { margin-left: 104px; }
+
+  .birch-wrap {
+    font-size: 28vw;
+  }
+
+  .abidi-wrap p {
+    width: 90%;
+  }
+
+  /* Index: the two-sided tree folds into one column but keeps its sides.
+     Entries from the left column stay right-aligned against brackets on the
+     right edge; entries from the right column stay left-aligned against
+     brackets on the left edge. Each row stacks its cells, and the cell
+     holding a title link is ordered after its sibling so title/author pairs
+     stay together (rows interleave left and right entries). The rows holding
+     the About link and the last link are dissolved (display: contents) so
+     those two cells can be ordered to the foot, above the closing bracket.
+     Brackets are drawn as backgrounds so they hug text of any length; every
+     bracket SVG has its stem at x=11 of a 30px box, hence the offsets. */
+  .nine.column:not(.content-container) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .nine.column:not(.content-container) > br {
+    display: none;
+  }
+
+  .nine.column:not(.content-container) .row {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nine.column:not(.content-container) .row:has(> .column > a[href="about"]),
+  .nine.column:not(.content-container) .row:last-of-type {
+    display: contents;
+  }
+
+  .nine.column:not(.content-container) .row:has(> .column > a[href="about"])::after {
+    display: none;
+  }
+
+  /* Right-column entries: left-aligned, brackets on the left edge */
+  .nine.column:not(.content-container) .column {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 5px 0 5px 26px;
+    text-align: left;
+    background: url('../img/downrightLine.svg') no-repeat -10px 9px;
+  }
+
+  .nine.column:not(.content-container) .column:has(a) {
+    order: 2;
+    padding-top: 22px;
+    background: url('../img/uprightLine.svg') no-repeat -10px 100%;
+  }
+
+  /* Left-column entries: right-aligned, brackets on the right edge */
+  .nine.column:not(.content-container) .column.text-right {
+    padding-left: 0;
+    padding-right: 26px;
+    text-align: right;
+    background: url('../img/downleftLine.svg') no-repeat calc(100% + 18px) 9px;
+  }
+
+  .nine.column:not(.content-container) .column.text-right:has(a) {
+    background: url('../img/upleftLine.svg') no-repeat calc(100% + 18px) 100%;
+  }
+
+  /* About opens the foot group, under the bracket it wears on desktop */
+  .nine.column:not(.content-container) .column:has(> a[href="about"]) {
+    margin-top: 72px;
+    padding-top: 5px;
+    background: url('../img/downrightLine.svg') no-repeat -10px 9px;
+  }
+
+  .nine.column:not(.content-container) .zero,
+  .nine.column:not(.content-container) .empty-cell {
+    display: none;
+  }
+
+  .nine.column:not(.content-container) .column a {
+    display: block;
+    margin-top: 0;
+  }
+
+  /* First row is the issue label, hung from the tall opening bracket */
+  .nine.column:not(.content-container) .row:first-of-type .column:not(.zero) {
+    min-height: 100px;
+    padding: 0 0 0 26px;
+    box-sizing: border-box;
+    text-align: left;
+    background: url('../img/topLine.svg') no-repeat -10px 0;
+  }
+
+  .index-title {
+    margin: 0;
+    padding: 38px 0 0;
+  }
+
+  /* Verse lines that must wrap get a hanging indent where supported */
+  @supports (text-indent: -1.5em each-line) {
+    .content p:has(br):not(.text-justify):not(.text-center) {
+      padding-left: 1.5em;
+      text-indent: -1.5em each-line;
+    }
+  }
+
+  .nine.column:not(.content-container) .row:last-of-type::after {
+    content: "";
+    display: block;
+    order: 3;
+    visibility: visible;
+    height: 160px; /* the foot of the 190px closing bracket */
+    margin: 14px 0 40px;
+    background: url('../img/bottomLine.svg') no-repeat -10px 100%;
   }
 }
 
