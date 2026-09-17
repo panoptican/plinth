@@ -43,17 +43,6 @@
       white-space: nowrap;
       border: 0;
     }
-    /* Page transitions: cross-fade into the pieces where the browser supports
-       cross-document view transitions (matches css/grid.css). */
-    @media (prefers-reduced-motion: no-preference) {
-      @view-transition {
-        navigation: auto;
-      }
-    }
-    ::view-transition-group(root) {
-      animation-duration: 0.3s;
-    }
-
     /* Poster hotspots: the focus ring is for keyboard users, so it stays off
        for mouse clicks and taps, and the tap flash is switched off to match. */
     area {

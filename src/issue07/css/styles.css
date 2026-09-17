@@ -1267,22 +1267,6 @@ Grid
   }
 }
 
-/* Page transitions
-   ==========================================================================
-   Where the browser supports cross-document view transitions (Chrome,
-   Safari 18.2+) pages cross-fade instead of cutting; elsewhere they load as
-   before. The landing page shares this stylesheet, so it fades into the
-   issue too. */
-@media (prefers-reduced-motion: no-preference) {
-  @view-transition {
-    navigation: auto;
-  }
-}
-
-::view-transition-group(root) {
-  animation-duration: 0.3s;
-}
-
 /* Accessibility - Skip Link
    ========================================================================== */
 .skip-link {
