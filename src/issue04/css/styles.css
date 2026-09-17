@@ -1691,6 +1691,55 @@ ul {
   }
 }
 
+/* Page transitions
+   ==========================================================================
+   Where the browser supports cross-document view transitions (Chrome,
+   Safari 18.2+) pages cross-fade instead of cutting; elsewhere they load as
+   before. Elements that share a view-transition-name on both pages are moved
+   between their two positions rather than faded, which turns the wordmark's
+   change from index to piece (PL drops, NTH rises, the rule that stands in
+   for the I slides over) into real motion. The names sit on the tight inline
+   boxes around the letters, which are the same size on every page, so the
+   letters travel without being stretched. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+.wordmark-pl,
+.wordmark-nth,
+.drop a,
+span.journal a {
+  display: inline-block;
+}
+
+.wordmark-pl,
+.drop a {
+  view-transition-name: wordmark-pl;
+}
+
+.wordmark-nth,
+span.journal a {
+  view-transition-name: wordmark-nth;
+}
+
+.left-vert,
+.sidebar-top {
+  view-transition-name: wordmark-rule;
+}
+
+::view-transition-group(root) {
+  animation-duration: 0.3s;
+}
+
+::view-transition-group(wordmark-pl),
+::view-transition-group(wordmark-nth),
+::view-transition-group(wordmark-rule) {
+  animation-duration: 0.55s;
+  animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+}
+
 /* Accessibility - Skip Link
    ========================================================================== */
 .skip-link {
