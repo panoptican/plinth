@@ -600,6 +600,44 @@ th {
     color: rgb(8, 0, 52);
 }
 
+/* Index legibility
+   ==========================================================================
+   A contrast pass on the index, at every width. The plate is washed with the
+   frame's navy so the light text set over it holds (it used to sit on the
+   palest parts of the photograph), links over the plate stay light in every
+   state (visited ones used to turn navy), and the ghosted nav items use a
+   muted navy instead of pale green on white. */
+
+.image-box {
+    background: rgba(22, 18, 74, 0.6);
+}
+
+/* The rules that cross the plate stay above the wash (their own z-index of
+   1 is set further down, hence the element selectors) */
+div.horizontal,
+div.crossbar-2 {
+    z-index: 2;
+}
+
+.col-2 a:link, .col-2 a:visited, .col-2 a:active,
+.col-2 .toc-active a:link, .col-2 .toc-active a:visited, .col-2 .toc-active a:active {
+    color: white;
+}
+
+.col-2 a:hover,
+.col-2 .toc-active a:hover {
+    color: rgb(222, 250, 211);
+}
+
+.toc-inactive {
+    color: rgba(22, 18, 74, 0.4);
+}
+
+.col-2 .toc-inactive {
+    color: rgb(222, 250, 211);
+    opacity: 0.75;
+}
+
 /* Shapes
    ========================================================================== */
 
